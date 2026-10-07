@@ -1,9 +1,10 @@
 ---
 name: ultra-skill
 description: >
-  The ultimate all-in-one AI agent engineering, coding & design skill with autonomous
-  multi-agent orchestration. Combines 10 top-tier skills into an orchestrated powerhouse:
+  The ultimate all-in-one AI agent engineering, architecture visualization, coding & design skill
+  with autonomous multi-agent orchestration. Combines 11 top-tier skills into an orchestrated powerhouse:
   Agent Development Kit 2.0 (Google ADK: graph workflows, dynamic nodes, HITL, tools),
+  Archify (interactive architecture, workflow, sequence, dataflow & lifecycle diagrams),
   subagent-driven development & parallel agent dispatch, lazy-efficient engineering (Ponytail),
   anti-slop frontend design (Taste), GSAP 60fps animations, Motion Design principles,
   Design DNA visual extraction, systematic debugging & TDD (Superpowers), automated code
@@ -11,9 +12,10 @@ description: >
 argument-hint: "[task-type | slash-command] [context]"
 license: MIT
 metadata:
-  version: "3.0.0"
+  version: "3.1.0"
   architecture: "autonomous-state-machine"
   sources:
+    - archify (tt-a1i/archify)
     - ponytail (DietrichGebert/ponytail)
     - taste-skill (Leonxlnx/taste-skill)
     - gsap-skills (greensock/gsap-skills)
@@ -26,9 +28,9 @@ metadata:
     - adk-python (google/adk-python)
 ---
 
-# ⚡ Ultra Skill v3.0 — Autonomous Agentic Powerhouse
+# ⚡ Ultra Skill v3.1 — Autonomous Agentic Powerhouse
 
-> **One skill to rule them all.** Unifying 10 best-in-class AI agent systems into an orchestrated, self-routing agentic engine with specialized subagent personas, formal state-machine execution, executable workflows, and ironclad verification gates.
+> **One skill to rule them all.** Unifying 11 best-in-class AI agent systems into an orchestrated, self-routing agentic engine with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, and ironclad verification gates.
 
 ---
 
@@ -63,7 +65,7 @@ Every user prompt transitions through this deterministic 6-phase state machine:
       ▼
 ┌────────────────────────────────────────────────────────┐
 │ STATE 3: SUBAGENT EXECUTION LOOP                       │
-│ • Dispatch @architect, @engineer, @designer, @animator │
+│ • Dispatch @architect, @visualizer, @engineer, etc.    │
 │ • Apply Ponytail Ladder (shortest working diff)        │
 │ • Enforce strict TDD (Red-Green-Refactor)              │
 └────────────────────────────────────────────────────────┘
@@ -73,6 +75,7 @@ Every user prompt transitions through this deterministic 6-phase state machine:
 │ STATE 4: AUTONOMOUS REVIEW & SELF-CORRECTION           │
 │ • CodeRabbit triage (Critical -> Info) & secret scan   │
 │ • Detect AI slop (detect_ai_slop.py) & contrast audit  │
+│ • Archify layout checks (crossovers & geometry)        │
 └────────────────────────────────────────────────────────┘
       │
       ▼
@@ -93,6 +96,7 @@ Activate or role-play these specialized subagents depending on the active state:
 | Subagent Role | Domain / Skill Focus | Primary Responsibility | Persona Spec |
 | :--- | :--- | :--- | :--- |
 | **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
+| **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
 | **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, standard library first, shortest working diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
 | **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography locks, color consistency. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
 | **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, timelines, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
@@ -117,12 +121,14 @@ Execute step-by-step procedures documented in the `workflows/` directory:
 8. [08-design-dna-extraction.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
 9. [09-brand-asset-production.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — UI/UX Pro Max logos, banners, slides, and 3-tier tokens
 10. [10-gate-function-verification.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
+11. [11-interactive-architecture-visualization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
 
 ---
 
 ## 0.3 DEEP REFERENCE ARCHIVES
 
 Deep technical documentation, prompt templates, and code catalogs are bundled in `references/`:
+- **Archify:** [references/archify/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/archify) — CLI engine, 5 diagram schemas, recipes, brand marks.
 - **ADK 2.0 (11 packages):** [references/adk/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)
 - **Superpowers:** [references/superpowers/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/superpowers)
 - **Taste Skill:** [references/taste/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/taste)
@@ -139,6 +145,7 @@ Deep technical documentation, prompt templates, and code catalogs are bundled in
 
 | Slash Command / Intent | Active Subagents | Workflows & Modules Activated |
 | :--- | :--- | :--- |
+| `/diagram` or `/archify` | `@visualizer` | Workflow 11 + §18 Archify Visualization |
 | `/agent` or `/workflow` | `@architect`, `@engineer` | Workflow 01 + §14 ADK Workflows + §1 Ponytail |
 | `/design` or `/frontend` | `@designer`, `@animator` | Workflow 03 + Workflow 04 + §2 Taste + §3 GSAP + §4 Motion |
 | `/debug` | `@debugger`, `@tester` | Workflow 05 + Workflow 06 + §6 Systematic Debugging + §7 TDD |
@@ -148,6 +155,7 @@ Deep technical documentation, prompt templates, and code catalogs are bundled in
 | `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
 | `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
+
 
 
 
@@ -1008,11 +1016,57 @@ async def test_agent_execution():
     assert any(e.content and "pong" in e.content.parts[0].text.lower() for e in events)
 ```
 
+
+---
+
+# PART IX — INTERACTIVE ARCHITECTURE VISUALIZATION
+
+## §18. Archify — Interactive Architecture & Workflow Diagrams
+
+> Source: `tt-a1i/archify`. Deep references, schemas, and CLI in `references/archify/`.
+
+Archify creates explorable, standalone HTML diagrams with embedded SVG, dark/light themes, zoom/pan controls, optional trace motion, and PNG/JPEG/WebP/SVG/WebM export.
+
+### 18.1 The Five Diagram Modes
+
+| Mode | Target Subject | Primary Output | Schema |
+| :--- | :--- | :--- | :--- |
+| **`architecture`** | Components, services, databases, cloud boundaries, infrastructure | System blueprint | `references/archify/schemas/architecture.schema.json` |
+| **`workflow`** | Step-by-step processes, approval gates, CI/CD runbooks, agent tool chains | Operational pipeline | `references/archify/schemas/workflow.schema.json` |
+| **`sequence`** | API call chains, request lifecycles, async message exchanges | Message timeline | `references/archify/schemas/sequence.schema.json` |
+| **`dataflow`** | Data pipelines, ETL/ELT flows, data lineage, producer-consumer graphs | Information lineage | `references/archify/schemas/dataflow.schema.json` |
+| **`lifecycle`** | State machines, lifecycle statuses, retries, terminal outcomes | Transition state map | `references/archify/schemas/lifecycle.schema.json` |
+
+### 18.2 Converting Mermaid Input
+When given Mermaid markup, convert semantic intent into Archify candidate JSON:
+- `flowchart` / `graph` → `workflow` (or `architecture` for infrastructure components).
+- `sequenceDiagram` → `sequence` (messages, async replies, participant lifetimes).
+- `stateDiagram` → `lifecycle` (states, transitions, guard conditions).
+*Do not mechanically copy Mermaid styling; structure rich nodes with semantic icons and boundaries.*
+
+### 18.3 Fast Authoring & Finalize CLI Validation
+1. Author candidate JSON in `.archify/<type>-<slug>-<timestamp>/candidate.json`.
+2. Execute the `finalize` gate command to ensure 100% schema compliance and geometric layout quality:
+
+```bash
+node skills/ultra-skill/references/archify/bin/archify.mjs finalize <type> <candidate.json> <output.html> --quality showcase --json
+```
+
+3. For repository-backed architecture diagrams, attach source evidence pointers (`file` and line references) with `--repo-root <repo-root>`.
+4. Only enable motion (`meta.animation: "trace"`) when explicitly requested by the user.
+
 ---
 
 # FINAL PRE-FLIGHT CHECK
 
 Run this before delivering ANY output:
+
+### Architecture & Diagram Tasks (Archify)
+- [ ] Diagram mode chosen accurately (`architecture`, `workflow`, `sequence`, `dataflow`, `lifecycle`)?
+- [ ] Candidate JSON validated against official Archify schema?
+- [ ] Executed `finalize` CLI command with exit code `0`?
+- [ ] Real codebase nodes grounded with source file evidence pointers?
+- [ ] Output HTML is self-contained with dark/light themes and export controls?
 
 ### Agent & Workflow Tasks (ADK 2.0)
 - [ ] Agent directory has `__init__.py` exporting `from . import agent`?
@@ -1061,5 +1115,5 @@ Run this before delivering ANY output:
 
 ---
 
-*Ultra Skill v2.0 — Combining Google ADK 2.0, Ponytail, Taste, GSAP, Motion Design, Design DNA, Superpowers, CodeRabbit, Vercel Skills, and UI/UX Pro Max into one unstoppable AI skill.*
+*Ultra Skill v3.1 — Combining Google ADK 2.0, Archify, Ponytail, Taste, GSAP, Motion Design, Design DNA, Superpowers, CodeRabbit, Vercel Skills, and UI/UX Pro Max into one unstoppable AI powerhouse.*
 

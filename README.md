@@ -1,8 +1,8 @@
-# ⚡ Ultra Skill v3.0 — The Autonomous AI Powerhouse
+# ⚡ Ultra Skill v3.1 — The Autonomous AI Powerhouse
 
-> **One skill to rule them all.** Unifying 10 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, deep reference archives, and ironclad verification gates.
+> **One skill to rule them all.** Unifying 11 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, deep reference archives, and ironclad verification gates.
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
+[![Version](https://img.shields.io/badge/version-3.1.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](file:///d:/Agent%20SKILLS/ultra-skill/README.md)
 [![Platforms](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Windsurf-orange.svg)](file:///d:/Agent%20SKILLS/ultra-skill)
 [![Architecture](https://img.shields.io/badge/architecture-Autonomous%20State%20Machine-purple.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
@@ -16,20 +16,21 @@
 - [Specialized Subagent Roles & Personas](#-specialized-subagent-roles--personas)
 - [Actionable Workflows Map](#-actionable-workflows-map)
 - [Deep Reference Archives](#-deep-reference-archives)
-- [The 10 Unified Modules Matrix](#-the-10-unified-modules-matrix)
+- [The 11 Unified Modules Matrix](#-the-11-unified-modules-matrix)
 - [Slash Command Routing Table](#-slash-command-routing-table)
 - [Core Feature Deep Dive](#-core-feature-deep-dive)
   - [1. AI Agent & Graph Workflow Engineering (ADK 2.0)](#1-ai-agent--graph-workflow-engineering-adk-20)
-  - [2. Lazy-Efficient Coding (Ponytail)](#2-lazy-efficient-coding-ponytail)
-  - [3. Anti-Slop Frontend Design (Taste)](#3-anti-slop-frontend-design-taste)
-  - [4. Professional Animation Engines (GSAP & Motion Design)](#4-professional-animation-engines-gsap--motion-design)
-  - [5. Visual Identity Extraction & Generation (Design DNA)](#5-visual-identity-extraction--generation-design-dna)
-  - [6. Brand Assets & Design Production (UI/UX Pro Max)](#6-brand-assets--design-production-uiux-pro-max)
-  - [7. Systematic Debugging & Root Cause Analysis](#7-systematic-debugging--root-cause-analysis)
-  - [8. Test-Driven Development (TDD)](#8-test-driven-development-tdd)
-  - [9. Verification Before Completion](#9-verification-before-completion)
-  - [10. Autonomous Code Review](#10-autonomous-code-review)
-  - [11. Architecture & Implementation Planning](#11-architecture--implementation-planning)
+  - [2. Interactive Architecture Visualization (Archify)](#2-interactive-architecture-visualization-archify)
+  - [3. Lazy-Efficient Coding (Ponytail)](#3-lazy-efficient-coding-ponytail)
+  - [4. Anti-Slop Frontend Design (Taste)](#4-anti-slop-frontend-design-taste)
+  - [5. Professional Animation Engines (GSAP & Motion Design)](#5-professional-animation-engines-gsap--motion-design)
+  - [6. Visual Identity Extraction & Generation (Design DNA)](#6-visual-identity-extraction--generation-design-dna)
+  - [7. Brand Assets & Design Production (UI/UX Pro Max)](#7-brand-assets--design-production-uiux-pro-max)
+  - [8. Systematic Debugging & Root Cause Analysis](#8-systematic-debugging--root-cause-analysis)
+  - [9. Test-Driven Development (TDD)](#9-test-driven-development-tdd)
+  - [10. Verification Before Completion](#10-verification-before-completion)
+  - [11. Autonomous Code Review](#11-autonomous-code-review)
+  - [12. Architecture & Implementation Planning](#12-architecture--implementation-planning)
 - [Automation & Verification Utilities](#-automation--verification-utilities)
 - [Directory & Repository Structure](#-directory--repository-structure)
 - [Installation & Multi-Platform Setup](#-installation--multi-platform-setup)
@@ -45,9 +46,10 @@ Modern AI agent workflows suffer from **fragmentation and tool sprawl**:
 - You load one skill for writing tests, but it creates bloated boilerplate code.
 - You ask an agent to build a landing page, and it generates generic "AI slop" with purple gradients, standard Inter typography, and three identical cards.
 - You design animations, but they end up linear, laggy, or inaccessible.
+- You build complex architectures, but lack clean, interactive system diagrams to explore them.
 - You orchestrate agent systems with fragile monolithic prompts instead of deterministic state graphs.
 
-**Ultra Skill v3.0** solves this by establishing a deterministic, autonomous agentic workflow that unifies the top 10 open-source agent patterns into a coherent operating system.
+**Ultra Skill v3.1** solves this by establishing a deterministic, autonomous agentic workflow that unifies 11 best-in-class open-source agent patterns into a coherent operating system.
 
 ---
 
@@ -82,7 +84,7 @@ Every user request transitions through this deterministic 6-phase state machine:
       ▼
 ┌────────────────────────────────────────────────────────┐
 │ STATE 3: SUBAGENT EXECUTION LOOP                       │
-│ • Dispatch @architect, @engineer, @designer, @animator │
+│ • Dispatch @architect, @visualizer, @engineer, etc.    │
 │ • Apply Ponytail Ladder (shortest working diff)        │
 │ • Enforce strict TDD (Red-Green-Refactor)              │
 └────────────────────────────────────────────────────────┘
@@ -92,6 +94,7 @@ Every user request transitions through this deterministic 6-phase state machine:
 │ STATE 4: AUTONOMOUS REVIEW & SELF-CORRECTION           │
 │ • CodeRabbit triage (Critical -> Info) & secret scan   │
 │ • Detect AI slop (detect_ai_slop.py) & contrast audit  │
+│ • Archify layout checks (crossovers & geometry)        │
 └────────────────────────────────────────────────────────┘
       │
       ▼
@@ -112,6 +115,7 @@ When operating on complex tasks, Ultra Skill dispatches or role-plays dedicated 
 | Subagent Role | Focus Area | Superpower & Responsibility | Specification |
 | :--- | :--- | :--- | :--- |
 | **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
+| **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
 | **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, stdlib first, shortest diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
 | **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography & color locks. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
 | **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
@@ -136,6 +140,7 @@ Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20
 8. [08: Design DNA Extraction & Style Transfer](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
 9. [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — Logos, banners, slides, and 3-tier tokens
 10. [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
+11. [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
 
 ---
 
@@ -143,6 +148,7 @@ Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20
 
 Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-skill/references/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references):
 
+- **[references/archify/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/archify)** — Archify CLI engine (`bin/archify.mjs`), 5 diagram schemas, recipes, brand marks.
 - **[references/adk/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)** — 11 packages: agent builder, architecture, debug, git, review, sample creator, setup, style, unit design, unit guide, verify snippets.
 - **[references/superpowers/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/superpowers)** — Subagent-driven dev, parallel dispatch, systematic debugging, TDD, verification gates, writing plans.
 - **[references/taste/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/taste)** — Anti-slop guidelines, brandkit, minimalist, brutalist, soft design, redesign skill, image-to-code.
@@ -155,7 +161,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 
 ---
 
-## 🧩 The 10 Unified Modules Matrix
+## 🧩 The 11 Unified Modules Matrix
 
 | Module / Skill | Provenance / Upstream | Primary Superpower & Contribution |
 | :--- | :--- | :--- |
@@ -171,6 +177,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 | **§10 Code Review** | [`coderabbitai/skills`](https://github.com/coderabbitai/skills) | **Autonomous Review & Triage:** Severity-rated findings (Critical → Info), secret hygiene, automated review loop. |
 | **§11 Implementation Planning** | [`obra/superpowers`](https://github.com/obra/superpowers) | **Zero-Context Engineering Plans:** Exact file paths, precise method signatures, atomic TDD task steps. |
 | **§14-17 Google ADK 2.0** | [`google/adk-python`](https://github.com/google/adk-python) | **Enterprise Agent & Graph Workflows:** Directed graph scheduling, fan-out/fan-in, dynamic nodes, HITL, headless diagnostics. |
+| **§18 Archify** | [`tt-a1i/archify`](https://github.com/tt-a1i/archify) | **Interactive Architecture Visualization:** 5 diagram modes, Mermaid conversion, standalone HTML with SVG & trace motion. |
 
 ---
 
@@ -178,6 +185,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 
 | Slash Command / Intent | Active Subagents | Workflows & Modules Activated |
 | :--- | :--- | :--- |
+| `/diagram` or `/archify` | `@visualizer` | Workflow 11 + §18 Archify Visualization |
 | `/agent` or `/workflow` | `@architect`, `@engineer` | Workflow 01 + §14 ADK Workflows + §1 Ponytail |
 | `/design` or `/frontend` | `@designer`, `@animator` | Workflow 03 + Workflow 04 + §2 Taste + §3 GSAP + §4 Motion |
 | `/debug` | `@debugger`, `@tester` | Workflow 05 + Workflow 06 + §6 Systematic Debugging + §7 TDD |
@@ -203,33 +211,30 @@ Ultra Skill applies strict software engineering standards to AI agents, replacin
   from google.adk.workflow import JoinNode, node
   from google.adk.runners import InMemoryRunner
   ```
-- **Standard Convention Directory Structure:**
-  ```text
-  my_agent/
-  ├── __init__.py       # REQUIRED: must expose `from . import agent`
-  ├── agent.py          # REQUIRED: defines `root_agent`
-  └── .env              # Local API keys (placed directly in agent dir)
-  ```
-- **Graph Workflows & Edge Compilation:** Connect deterministic nodes from `"START"` through branching logic:
-  ```python
-  root_agent = Workflow(
-      name="triage_workflow",
-      edges=[
-          ("START", classify_input),
-          (classify_input, {"urgent": handle_urgent, "standard": handle_standard}),
-      ],
-  )
-  ```
-- **Function Nodes & `@node` Decorators:**
-  - `parallel_worker=True`: Automatically processes input collections concurrently across workers.
-  - `rerun_on_resume=True`: Guarantees re-execution when resuming an interrupted workflow.
+- **Graph Workflows & Edge Compilation:** Connect deterministic nodes from `"START"` through branching logic.
 - **Fan-Out / Fan-In Parallelism:** Execute concurrent tasks simultaneously and aggregate them with `JoinNode`.
 - **Dynamic Scheduling:** Programmatically dispatch nodes at runtime with `await ctx.run_node(agent, node_input=...)`.
 - **Human-in-the-Loop (HITL) Interrupts:** Pause execution for user confirmation with `RequestInput(prompt="...", interrupt_id="...")`.
 
 ---
 
-### 2. Lazy-Efficient Coding (Ponytail)
+### 2. Interactive Architecture Visualization (Archify)
+*(Powered by `tt-a1i/archify`)*
+
+Turn systems, workflows, and code repositories into interactive, explorable HTML visuals:
+- **5 Diagram Modes:**
+  1. `architecture`: Services, databases, cloud & security boundaries, repository architecture.
+  2. `workflow`: Step-by-step processes, approval gates, tool call paths.
+  3. `sequence`: API call chains, async message traces between services.
+  4. `dataflow`: Pipelines, ETL/ELT flows, data lineage.
+  5. `lifecycle`: State machines, status transitions, retries.
+- **Mermaid Conversion:** Automatically transforms Mermaid (`flowchart`, `sequenceDiagram`, `stateDiagram`) into interactive HTML.
+- **Standalone HTML Output:** Zero external dependencies, embedded inline SVG, dark/light theme switch, zoom/pan controls, optional trace animation, and multi-format export (SVG, PNG, WebP, WebM).
+- **Validation Engine:** Built-in `finalize` CLI validates schemas, detects overlapping nodes, and fixes layout geometry.
+
+---
+
+### 3. Lazy-Efficient Coding (Ponytail)
 *(Powered by `DietrichGebert/ponytail`)*
 
 > *"The best code is the code never written. Shortest working diff wins."*
@@ -246,14 +251,11 @@ Ultra Skill adheres to the **Lazy Senior Developer Ladder** — evaluate every t
 
 ---
 
-### 3. Anti-Slop Frontend Design (Taste)
+### 4. Anti-Slop Frontend Design (Taste)
 *(Powered by `Leonxlnx/taste-skill`)*
 
 Ultra Skill completely eliminates generic AI slop from web apps and landing pages.
-
-#### Brief Inference & "The Design Read"
-Before writing HTML or CSS, Ultra Skill infers the project's true intent:
-- **Design Read:** Outputs a one-sentence *Design Read* declaring page kind, vibe, and audience.
+- **Design Read:** Declares page kind, vibe, and audience before coding.
 - **The Three Dials:** `DESIGN_VARIANCE` (1-10), `MOTION_INTENSITY` (1-10), `VISUAL_DENSITY` (1-10).
 - **Hard Invariants:**
   - 🚫 No default purple glowing cards (The Lila Rule).
@@ -264,7 +266,7 @@ Before writing HTML or CSS, Ultra Skill infers the project's true intent:
 
 ---
 
-### 4. Professional Animation Engines (GSAP & Motion Design)
+### 5. Professional Animation Engines (GSAP & Motion Design)
 *(Powered by `greensock/gsap-skills` & `LottieFiles/motion-design-skill`)*
 
 - **Transform Aliases Only:** Always animate `x`, `y`, `scale`, `rotation`, and `autoAlpha`. Never animate `top`, `left`, `width`, or `height`.
@@ -274,7 +276,7 @@ Before writing HTML or CSS, Ultra Skill infers the project's true intent:
 
 ---
 
-### 5. Systematic Debugging & TDD Discipline
+### 6. Systematic Debugging & TDD Discipline
 *(Powered by `obra/superpowers`)*
 
 - **The Iron Law of Debugging:** NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.
@@ -285,7 +287,7 @@ Before writing HTML or CSS, Ultra Skill infers the project's true intent:
 
 ---
 
-### 6. Verification Before Completion
+### 7. Verification Before Completion
 *(Powered by `obra/superpowers`)*
 
 - **The Iron Law:** NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE.
@@ -313,6 +315,11 @@ Ultra Skill includes automated diagnostic and verification tools in [scripts/](f
   ```bash
   adk run --jsonl my_agent "Query" | python scripts/adk_trace_inspector.py
   ```
+- **Archify Finalizer CLI:**
+  Validates candidate diagram JSON and compiles interactive standalone HTML.
+  ```bash
+  node skills/ultra-skill/references/archify/bin/archify.mjs finalize architecture candidate.json output.html --quality showcase --json
+  ```
 
 ---
 
@@ -327,6 +334,7 @@ ultra-skill/
 ├── .gitignore                 # Standard Python, IDE, and log ignore rules
 ├── agents/                    # Specialized subagent personas
 │   ├── architect.md           # @architect: ADK 2.0 graph builder
+│   ├── visualizer.md          # @visualizer: Archify interactive diagrams
 │   ├── engineer.md            # @engineer: Ponytail lazy senior dev
 │   ├── designer.md            # @designer: Taste & Design DNA creator
 │   ├── animator.md            # @animator: GSAP & Motion choreographer
@@ -344,7 +352,8 @@ ultra-skill/
 │   ├── 07-autonomous-code-review.md
 │   ├── 08-design-dna-extraction.md
 │   ├── 09-brand-asset-production.md
-│   └── 10-gate-function-verification.md
+│   ├── 10-gate-function-verification.md
+│   └── 11-interactive-architecture-visualization.md
 ├── scripts/                   # Automated quality and verification tools
 │   ├── verify_evidence.py     # Gate-function test & build verifier
 │   ├── detect_ai_slop.py      # Frontend AI design anti-slop linter
@@ -352,7 +361,8 @@ ultra-skill/
 └── skills/
     └── ultra-skill/
         ├── SKILL.md           # Master skill definition & full instruction manual
-        └── references/        # Deep reference archives from all 10 upstream systems
+        └── references/        # Deep reference archives from all 11 upstream systems
+            ├── archify/       # Archify CLI engine, 5 diagram schemas, recipes
             ├── adk/           # 11 Google ADK 2.0 packages
             ├── superpowers/   # Subagent dev, parallel dispatch, TDD, debugging
             ├── taste/         # Anti-slop, minimalist, brutalist, soft, brandkit
@@ -399,6 +409,13 @@ Simply copy `AGENTS.md` to your workspace root or configure your AI agent to rea
 
 Ultra Skill performs this verification audit before submitting any final response:
 
+### 🗺️ Architecture & Diagram Tasks (Archify)
+- [ ] Diagram mode chosen accurately (`architecture`, `workflow`, `sequence`, `dataflow`, `lifecycle`)?
+- [ ] Candidate JSON validated against official Archify schema?
+- [ ] Executed `finalize` CLI command with exit code `0`?
+- [ ] Real codebase nodes grounded with source file evidence pointers?
+- [ ] Output HTML is self-contained with dark/light themes and export controls?
+
 ### 🤖 Agent & Workflow Tasks (ADK 2.0)
 - [ ] Agent directory includes `__init__.py` exposing `from . import agent`?
 - [ ] Primary agent or workflow exported as `root_agent`?
@@ -430,12 +447,12 @@ Ultra Skill performs this verification audit before submitting any final respons
 
 ## 🍳 Cookbook & Real-World Recipes
 
-### Recipe 1: Building a Branching AI Agent Workflow
+### Recipe 1: Building a Branching AI Agent Workflow (ADK 2.0)
 ```python
 from google.adk import Workflow, Event
 
 def analyze_sentiment(text: str) -> Event:
-    score = len(text) % 2  # Replace with actual model evaluation
+    score = len(text) % 2
     route = "positive" if score == 0 else "negative"
     return Event(output={"text": text, "route": route}, route=route)
 
@@ -492,6 +509,18 @@ mm.add({
 });
 ```
 
+### Recipe 3: Generating an Interactive System Diagram with Archify
+```bash
+# 1. Author candidate architecture JSON
+# 2. Run finalize gate command to produce standalone interactive HTML
+node skills/ultra-skill/references/archify/bin/archify.mjs finalize \
+  architecture \
+  .archify/architecture-web-app/candidate.json \
+  dist/architecture.html \
+  --quality showcase \
+  --json
+```
+
 ---
 
 ## 📄 License & Sources
@@ -499,6 +528,7 @@ mm.add({
 Released under the [MIT License](file:///d:/Agent%20SKILLS/ultra-skill/README.md).
 
 ### Upstream Sources & Credits
+- **Archify:** [`tt-a1i/archify`](https://github.com/tt-a1i/archify)
 - **Google ADK 2.0:** [`google/adk-python`](https://github.com/google/adk-python)
 - **Ponytail:** [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail)
 - **Taste:** [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill)

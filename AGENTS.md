@@ -19,6 +19,7 @@
 
 When executing specialized tasks, assume or dispatch these dedicated subagent roles:
 - **`@architect`** ([agents/architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md)): Google ADK 2.0 graphs, dynamic nodes, state channels, and HITL interrupts.
+- **`@visualizer`** ([agents/visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md)): Archify interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML).
 - **`@engineer`** ([agents/engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md)): Lazy senior engineer mode, YAGNI, standard library first, shortest diff wins.
 - **`@designer`** ([agents/designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md)): Anti-slop frontend aesthetics, 3 dials, layout rules, typography locks, color consistency.
 - **`@animator`** ([agents/animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md)): 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`.
@@ -41,6 +42,7 @@ When executing specialized tasks, assume or dispatch these dedicated subagent ro
 - [08: Design DNA Extraction & Style Transfer](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
 - [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
 - [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md)
 
 ---
 
@@ -49,3 +51,4 @@ When executing specialized tasks, assume or dispatch these dedicated subagent ro
 - **Gate Verification Runner:** `python scripts/verify_evidence.py "<command>"`
 - **AI Slop Detector:** `python scripts/detect_ai_slop.py <path>`
 - **ADK Trace Inspector:** `python scripts/adk_trace_inspector.py <logfile.jsonl>`
+- **Archify Finalizer:** `node skills/ultra-skill/references/archify/bin/archify.mjs finalize <type> <candidate.json> <output.html>`
