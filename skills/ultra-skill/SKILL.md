@@ -57,9 +57,12 @@ Every user prompt transitions through this deterministic 6-phase state machine:
       │
       ▼
 ┌────────────────────────────────────────────────────────┐
-│ STATE 2: CONTRACT & ATOMIC DECOMPOSITION               │
-│ • Formulate implementation plan with zero-context specs│
-│ • Declare exact file paths, signatures, & TDD steps    │
+│ STATE 2: MANDATORY PLAN & PROGRESS CHECKLIST (IRON LAW)│
+│ • WHEN ANY NEW PLAN OR TASK STARTS, YOU MUST:          │
+│   1. Author a structured Implementation Plan           │
+│   2. Generate an interactive Markdown Checklist (- [ ])│
+│ • NO CODE EDITING OR CREATION BEFORE PLAN & CHECKLIST! │
+│ • Update checklist items (- [x]) live as tests pass    │
 └────────────────────────────────────────────────────────┘
       │
       ▼
@@ -95,6 +98,7 @@ Activate or role-play these specialized subagents depending on the active state:
 
 | Subagent Role | Domain / Skill Focus | Primary Responsibility | Persona Spec |
 | :--- | :--- | :--- | :--- |
+| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk mitigation & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
 | **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
 | **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
 | **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, standard library first, shortest working diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
@@ -122,6 +126,7 @@ Execute step-by-step procedures documented in the `workflows/` directory:
 9. [09-brand-asset-production.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — UI/UX Pro Max logos, banners, slides, and 3-tier tokens
 10. [10-gate-function-verification.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
 11. [11-interactive-architecture-visualization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
+12. [12-implementation-planning-and-checklists.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
 
 ---
 
@@ -145,16 +150,17 @@ Deep technical documentation, prompt templates, and code catalogs are bundled in
 
 | Slash Command / Intent | Active Subagents | Workflows & Modules Activated |
 | :--- | :--- | :--- |
+| `/plan` | `@planner`, `@architect` | Workflow 12 + Workflow 02 + §11 Implementation Planning & Checklists |
 | `/diagram` or `/archify` | `@visualizer` | Workflow 11 + §18 Archify Visualization |
 | `/agent` or `/workflow` | `@architect`, `@engineer` | Workflow 01 + §14 ADK Workflows + §1 Ponytail |
 | `/design` or `/frontend` | `@designer`, `@animator` | Workflow 03 + Workflow 04 + §2 Taste + §3 GSAP + §4 Motion |
 | `/debug` | `@debugger`, `@tester` | Workflow 05 + Workflow 06 + §6 Systematic Debugging + §7 TDD |
 | `/tdd` | `@tester`, `@engineer` | Workflow 06 + §7 TDD + §1 Ponytail |
 | `/review` or `/audit` | `@reviewer`, `@engineer` | Workflow 07 + §10 Code Review + `scripts/detect_ai_slop.py` |
-| `/plan` | `@architect`, `@engineer` | Workflow 02 + §11 Writing Plans + §1 Ponytail |
 | `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
 | `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
+
 
 
 
@@ -671,9 +677,22 @@ Component (specific: --button-bg: var(--color-primary))
 
 ---
 
-# PART VI — PLANNING
+# PART VI — PLANNING & PROGRESS TRACKING
 
-## §11. Writing Plans
+## §11. Writing Plans & Interactive Checklists
+
+### The Iron Law of Planning
+
+```
+NO CODE CHANGES OR FILE CREATION WITHOUT AN IMPLEMENTATION PLAN AND CHECKLIST FIRST
+```
+
+### Protocol for Every New Plan
+Whenever a new plan or task begins:
+1. **Author the Implementation Plan:** Formulate the strategy, architecture, affected files, interfaces, and constraints.
+2. **Generate the Interactive Checklist:** Create checkable `- [ ]` markdown checkboxes for every atomic phase and step.
+3. **Live Progress Tracking:** As each step is implemented and verified through test runs, update the checkbox to `- [x]`.
+4. **Never Check Ahead:** Only mark completed AFTER receiving terminal execution proof.
 
 ### Overview
 
@@ -682,7 +701,7 @@ Write implementation plans for an engineer who has not seen the codebase. Assume
 ### Plan Structure
 
 ```markdown
-# [Feature Name] Implementation Plan
+# 📋 [Feature Name] Implementation Plan
 
 **Goal:** [One sentence]
 **Architecture:** [2-3 sentences]
@@ -690,13 +709,19 @@ Write implementation plans for an engineer who has not seen the codebase. Assume
 **Spec:** [path to spec doc]
 
 ## Global Constraints
-[Project-wide requirements, one line each]
+- [ ] [Project-wide requirements, one line each]
 
 ## Review Focus
 [Five input classes or failure modes most likely to bite]
+
+## 📝 Master Checklist
+- [ ] Phase 1: Setup & Data Contracts
+- [ ] Phase 2: Core Logic & TDD
+- [ ] Phase 3: Integration & Review
+- [ ] Phase 4: Final Verification Gate
 ```
 
-### Task Structure
+### Atomic Task Structure
 
 ```markdown
 ### Task N: [Component Name]
@@ -709,11 +734,11 @@ Write implementation plans for an engineer who has not seen the codebase. Assume
 - Consumes: [exact signatures from earlier tasks]
 - Produces: [exact function names for later tasks]
 
-- [ ] Step 1: Write failing test
+- [ ] Step 1: Write failing test (RED)
 - [ ] Step 2: Run test to verify it fails
-- [ ] Step 3: Implement minimal code
+- [ ] Step 3: Implement minimal code (GREEN)
 - [ ] Step 4: Run test to verify it passes
-- [ ] Step 5: Commit
+- [ ] Step 5: Commit & check off task
 ```
 
 ### Self-Review Checklist
@@ -723,6 +748,7 @@ Write implementation plans for an engineer who has not seen the codebase. Assume
 3. Type consistency — names match across tasks
 4. Review focus — uncovered failure modes get tests
 5. Proportion — plan isn't longer than the code it describes
+
 
 ---
 

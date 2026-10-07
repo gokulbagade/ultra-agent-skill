@@ -24,13 +24,9 @@
   - [3. Lazy-Efficient Coding (Ponytail)](#3-lazy-efficient-coding-ponytail)
   - [4. Anti-Slop Frontend Design (Taste)](#4-anti-slop-frontend-design-taste)
   - [5. Professional Animation Engines (GSAP & Motion Design)](#5-professional-animation-engines-gsap--motion-design)
-  - [6. Visual Identity Extraction & Generation (Design DNA)](#6-visual-identity-extraction--generation-design-dna)
-  - [7. Brand Assets & Design Production (UI/UX Pro Max)](#7-brand-assets--design-production-uiux-pro-max)
-  - [8. Systematic Debugging & Root Cause Analysis](#8-systematic-debugging--root-cause-analysis)
-  - [9. Test-Driven Development (TDD)](#9-test-driven-development-tdd)
-  - [10. Verification Before Completion](#10-verification-before-completion)
-  - [11. Autonomous Code Review](#11-autonomous-code-review)
-  - [12. Architecture & Implementation Planning](#12-architecture--implementation-planning)
+  - [6. Systematic Debugging & TDD Discipline](#6-systematic-debugging--tdd-discipline)
+  - [7. Verification Before Completion](#7-verification-before-completion)
+  - [8. Implementation Planning & Live Progress Tracking](#8-implementation-planning--live-progress-tracking)
 - [Automation & Verification Utilities](#-automation--verification-utilities)
 - [Directory & Repository Structure](#-directory--repository-structure)
 - [Installation & Multi-Platform Setup](#-installation--multi-platform-setup)
@@ -76,9 +72,11 @@ Every user request transitions through this deterministic 6-phase state machine:
       │
       ▼
 ┌────────────────────────────────────────────────────────┐
-│ STATE 2: CONTRACT & ATOMIC DECOMPOSITION               │
-│ • Formulate implementation plan with zero-context specs│
-│ • Declare exact file paths, signatures, & TDD steps    │
+│ STATE 2: MANDATORY PLAN & PROGRESS CHECKLIST (IRON LAW)│
+│ • When any new plan starts: Author Implementation Plan │
+│ • Synthesize interactive markdown checklist (- [ ])    │
+│ • NO CODE CHANGES BEFORE PLAN & CHECKLIST!             │
+│ • Live progress tracking (- [x]) as steps verify       │
 └────────────────────────────────────────────────────────┘
       │
       ▼
@@ -114,6 +112,7 @@ When operating on complex tasks, Ultra Skill dispatches or role-plays dedicated 
 
 | Subagent Role | Focus Area | Superpower & Responsibility | Specification |
 | :--- | :--- | :--- | :--- |
+| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk mitigation & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
 | **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
 | **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
 | **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, stdlib first, shortest diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
@@ -141,6 +140,7 @@ Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20
 9. [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — Logos, banners, slides, and 3-tier tokens
 10. [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
 11. [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
+12. [12: Implementation Planning & Progress Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
 
 ---
 
@@ -191,7 +191,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 | `/debug` | `@debugger`, `@tester` | Workflow 05 + Workflow 06 + §6 Systematic Debugging + §7 TDD |
 | `/tdd` | `@tester`, `@engineer` | Workflow 06 + §7 TDD + §1 Ponytail |
 | `/review` or `/audit` | `@reviewer`, `@engineer` | Workflow 07 + §10 Code Review + `scripts/detect_ai_slop.py` |
-| `/plan` | `@architect`, `@engineer` | Workflow 02 + §11 Writing Plans + §1 Ponytail |
+| `/plan` | `@planner`, `@architect` | Workflow 12 + Workflow 02 + §11 Implementation Planning & Checklists |
 | `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
 | `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
@@ -296,6 +296,18 @@ Ultra Skill completely eliminates generic AI slop from web apps and landing page
 
 ---
 
+### 8. Implementation Planning & Live Progress Tracking
+*(Powered by `obra/superpowers` / Workflow 12)*
+
+- **The Iron Law of Planning:** NO CODE CHANGES OR FILE CREATION WITHOUT AN IMPLEMENTATION PLAN AND CHECKLIST FIRST.
+- **Protocol for Every New Task:**
+  1. Author a structured **Implementation Plan** declaring the goal, architecture, tech stack, affected files, interfaces, and constraints.
+  2. Generate an interactive **Master Checklist** with checkable markdown checkboxes (`- [ ]`).
+  3. **Live Progress Tracking:** As each atomic step completes and passes verification, update the checkbox to `- [x]`.
+  4. **Zero-Context Clarity:** Plans must be executable by an engineer with zero prior codebase knowledge.
+
+---
+
 ## 🛠️ Automation & Verification Utilities
 
 Ultra Skill includes automated diagnostic and verification tools in [scripts/](file:///d:/Agent%20SKILLS/ultra-skill/scripts):
@@ -333,6 +345,7 @@ ultra-skill/
 ├── README.md                  # This master documentation
 ├── .gitignore                 # Standard Python, IDE, and log ignore rules
 ├── agents/                    # Specialized subagent personas
+│   ├── planner.md             # @planner: Zero-context plans & checklists
 │   ├── architect.md           # @architect: ADK 2.0 graph builder
 │   ├── visualizer.md          # @visualizer: Archify interactive diagrams
 │   ├── engineer.md            # @engineer: Ponytail lazy senior dev
@@ -353,7 +366,8 @@ ultra-skill/
 │   ├── 08-design-dna-extraction.md
 │   ├── 09-brand-asset-production.md
 │   ├── 10-gate-function-verification.md
-│   └── 11-interactive-architecture-visualization.md
+│   ├── 11-interactive-architecture-visualization.md
+│   └── 12-implementation-planning-and-checklists.md
 ├── scripts/                   # Automated quality and verification tools
 │   ├── verify_evidence.py     # Gate-function test & build verifier
 │   ├── detect_ai_slop.py      # Frontend AI design anti-slop linter
@@ -408,6 +422,11 @@ Simply copy `AGENTS.md` to your workspace root or configure your AI agent to rea
 ## ✅ Pre-Flight Quality Checklist
 
 Ultra Skill performs this verification audit before submitting any final response:
+
+### 📋 Planning & Progress Tracking (All Tasks)
+- [ ] Implementation plan formulated and structured before any code modifications?
+- [ ] Live markdown checklist (`- [ ]`) created and updated with `[x]` as steps complete?
+- [ ] Zero-context specifications provided (exact file paths, signatures, test commands)?
 
 ### 🗺️ Architecture & Diagram Tasks (Archify)
 - [ ] Diagram mode chosen accurately (`architecture`, `workflow`, `sequence`, `dataflow`, `lifecycle`)?
@@ -519,6 +538,29 @@ node skills/ultra-skill/references/archify/bin/archify.mjs finalize \
   dist/architecture.html \
   --quality showcase \
   --json
+```
+
+### Recipe 4: Synthesizing an Implementation Plan & Live Task Checklist
+```markdown
+# 📋 Feature Implementation Plan
+
+**Goal:** Integrate Stripe webhook handler for subscription renewals.
+**Architecture:** Secure webhook endpoint validating signatures and publishing events.
+**Tech Stack:** FastAPI, Stripe SDK, Pytest.
+**Affected Files:**
+- `app/api/webhooks.py` (Create)
+- `tests/test_webhooks.py` (Create)
+
+## 🎯 Global Constraints
+- [ ] Must verify HMAC signature before payload parsing.
+- [ ] Idempotent event processing via event ID caching.
+
+## 📝 Master Implementation Checklist
+- [ ] Step 1: Write failing tests for invalid signatures (RED)
+- [ ] Step 2: Implement signature verification (GREEN)
+- [ ] Step 3: Write tests for event dispatch logic (RED)
+- [ ] Step 4: Implement event handler and verify pass (GREEN)
+- [ ] Step 5: Run full verification suite (`pytest tests/`)
 ```
 
 ---

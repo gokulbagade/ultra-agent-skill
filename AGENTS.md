@@ -8,16 +8,31 @@
 
 1. **State 0: Intake & Intent Routing:** Classify request domain, bind active subagent roles, and map applicable reference manuals.
 2. **State 1: Reconnaissance & Fact-Gathering:** Audit code, dependencies, and interfaces before authoring any diff. Formulate Design Read (Frontend) or Trace Log (ADK).
-3. **State 2: Contract & Decomposition:** Formulate zero-context implementation specs with atomic TDD task steps.
+3. **State 2: Mandatory Plan & Interactive Checklist (Iron Law):** Whenever ANY new plan or task starts, you MUST author a structured Implementation Plan and an interactive markdown checklist (`- [ ]`) before writing code. Track progress in real-time.
 4. **State 3: Subagent Execution:** Apply Ponytail Ladder (shortest working diff) and Red-Green-Refactor TDD discipline.
 5. **State 4: Autonomous Review & Correction:** Run CodeRabbit security scan, classify issues (Critical → Info), and run slop detector.
 6. **State 5: Gate-Function Verification:** Execute fresh terminal verification commands. Exit code `0` and zero failures required before claiming completion.
 
 ---
 
+## 📋 The Iron Law of Planning & Checklists
+
+```
+NO CODE CHANGES OR FILE CREATION WITHOUT AN IMPLEMENTATION PLAN AND CHECKLIST FIRST
+```
+
+Whenever a new task or plan begins:
+1. **Author the Implementation Plan:** Outline the goal, architecture, tech stack, affected file paths, and interfaces.
+2. **Generate the Interactive Checklist:** Every milestone and atomic task MUST use checkable markdown checkboxes (`- [ ]`).
+3. **Live Progress Tracking:** As each step passes verification, update the checkbox to `- [x]`.
+4. **Never Check Ahead:** Only check items off AFTER receiving fresh terminal execution proof.
+
+---
+
 ## 👥 Subagent Roles & Personas
 
 When executing specialized tasks, assume or dispatch these dedicated subagent roles:
+- **`@planner`** ([agents/planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md)): Zero-context implementation plans, spec synthesis, risk mitigation, and progress checklists.
 - **`@architect`** ([agents/architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md)): Google ADK 2.0 graphs, dynamic nodes, state channels, and HITL interrupts.
 - **`@visualizer`** ([agents/visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md)): Archify interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML).
 - **`@engineer`** ([agents/engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md)): Lazy senior engineer mode, YAGNI, standard library first, shortest diff wins.
@@ -43,6 +58,7 @@ When executing specialized tasks, assume or dispatch these dedicated subagent ro
 - [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
 - [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
 - [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md)
+- [12: Implementation Planning & Progress Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
 
 ---
 
