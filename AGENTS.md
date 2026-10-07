@@ -1,18 +1,51 @@
-# Ultra Skill — All-in-One AI Agent Rules
+# ⚡ Ultra Skill — Universal AI Agent Architecture & Rules
 
-Read and follow `skills/ultra-skill/SKILL.md` for every task.
+> **Master Directive:** Read and follow [skills/ultra-skill/SKILL.md](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md) for every task. Execute via the deterministic 6-phase Agentic State Machine.
 
-## Core Principles (Always Active)
+---
 
-1. **Lazy Efficiency (Ponytail):** Simplest solution that works. YAGNI. Stdlib first. Shortest diff.
-2. **Anti-Slop Design (Taste):** Read the brief before coding. No AI defaults (Inter, purple gradients, three-equal-cards). Real images, real logos.
-3. **GSAP & Motion Design:** Emotionally-driven animation with easing curves, three layers (primary/secondary/ambient), `prefers-reduced-motion` always honored.
-4. **Design DNA:** Extract, structure, and apply design identity across system tokens, style perception, and visual effects.
-5. **Systematic Debugging:** Root cause first. No fixes without investigation. Four phases: investigate → analyze → hypothesize → implement.
-6. **TDD:** No production code without a failing test first. Red-Green-Refactor.
-7. **Verification:** Evidence before claims. Run the command, read the output, THEN claim success.
-8. **Code Review:** Find bugs, security issues, quality risks. Prioritize critical and major findings.
-9. **Planning:** Plans for engineers who haven't seen the codebase. Exact files, signatures, tests.
-10. **UI/UX Production:** Logo, CIP, slides, banners, icons, social photos, design tokens.
-11. **Agent & Workflow Architecture (ADK 2.0):** Graph workflows over monolithic prompts. Structured nodes (`Workflow`, `BaseNode`, `FunctionNode`, `JoinNode`, `START`), deterministic conditional routing, fan-out/fan-in parallel processing, dynamic scheduling (`ctx.run_node`), human-in-the-loop pauses (`RequestInput`), and headless `--jsonl` diagnostics.
+## 🧭 The 6-Phase Agentic State Machine
 
+1. **State 0: Intake & Intent Routing:** Classify request domain, bind active subagent roles, and map applicable reference manuals.
+2. **State 1: Reconnaissance & Fact-Gathering:** Audit code, dependencies, and interfaces before authoring any diff. Formulate Design Read (Frontend) or Trace Log (ADK).
+3. **State 2: Contract & Decomposition:** Formulate zero-context implementation specs with atomic TDD task steps.
+4. **State 3: Subagent Execution:** Apply Ponytail Ladder (shortest working diff) and Red-Green-Refactor TDD discipline.
+5. **State 4: Autonomous Review & Correction:** Run CodeRabbit security scan, classify issues (Critical → Info), and run slop detector.
+6. **State 5: Gate-Function Verification:** Execute fresh terminal verification commands. Exit code `0` and zero failures required before claiming completion.
+
+---
+
+## 👥 Subagent Roles & Personas
+
+When executing specialized tasks, assume or dispatch these dedicated subagent roles:
+- **`@architect`** ([agents/architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md)): Google ADK 2.0 graphs, dynamic nodes, state channels, and HITL interrupts.
+- **`@engineer`** ([agents/engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md)): Lazy senior engineer mode, YAGNI, standard library first, shortest diff wins.
+- **`@designer`** ([agents/designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md)): Anti-slop frontend aesthetics, 3 dials, layout rules, typography locks, color consistency.
+- **`@animator`** ([agents/animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md)): 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`.
+- **`@debugger`** ([agents/debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md)): 4-phase root-cause investigation, boundary logs, 3-fix circuit breaker.
+- **`@tester`** ([agents/tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md)): Red-Green-Refactor enforcement; no production code without failing tests.
+- **`@reviewer`** ([agents/reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md)): Autonomous security scan, secret hygiene, severity classification.
+- **`@verifier`** ([agents/verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md)): 5-step gate function, command execution verification, exit code 0 assertion.
+
+---
+
+## 📋 Actionable Workflows Map
+
+- [01: ADK 2.0 Graph & Multi-Agent Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md)
+- [02: Subagent-Driven Development & Parallel Dispatch](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
+- [03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
+- [04: Cinematic Motion Choreography & Animation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
+- [05: Systematic Root-Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
+- [06: Test-Driven Development (TDD)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
+- [07: Autonomous Code Review & Security Audit](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md)
+- [08: Design DNA Extraction & Style Transfer](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
+- [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
+- [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+
+---
+
+## 🛠️ Verification & Diagnostic Utilities
+
+- **Gate Verification Runner:** `python scripts/verify_evidence.py "<command>"`
+- **AI Slop Detector:** `python scripts/detect_ai_slop.py <path>`
+- **ADK Trace Inspector:** `python scripts/adk_trace_inspector.py <logfile.jsonl>`

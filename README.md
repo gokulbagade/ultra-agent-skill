@@ -1,19 +1,23 @@
-# ⚡ Ultra Skill — The All-in-One AI Powerhouse
+# ⚡ Ultra Skill v3.0 — The Autonomous AI Powerhouse
 
-> **One skill to rule them all.** Unifying 10 elite AI agent skills into a single, cohesive engine for AI Agent & Graph Architecture (Google ADK 2.0), Lazy-Efficient Engineering (Ponytail), Anti-Slop Frontend Design (Taste), Animation Engines (GSAP & Motion Design), Visual Identity Extraction (Design DNA), Rigorous Engineering Discipline (Systematic Debugging, TDD, Verification), Production Brand Assets (UI/UX Pro Max), and AI-Powered Code Reviews (CodeRabbit).
+> **One skill to rule them all.** Unifying 10 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, deep reference archives, and ironclad verification gates.
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](file:///d:/Agent%20SKILLS/ultra-skill/README.md)
 [![Platforms](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Windsurf-orange.svg)](file:///d:/Agent%20SKILLS/ultra-skill)
-[![Architecture](https://img.shields.io/badge/engine-ADK%202.0%20%2B%20Superpowers-purple.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)
+[![Architecture](https://img.shields.io/badge/architecture-Autonomous%20State%20Machine-purple.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
 
 ---
 
 ## 📑 Table of Contents
 
 - [Overview & The Unified Vision](#-overview--the-unified-vision)
+- [The 6-Phase Agentic State Machine](#-the-6-phase-agentic-state-machine)
+- [Specialized Subagent Roles & Personas](#-specialized-subagent-roles--personas)
+- [Actionable Workflows Map](#-actionable-workflows-map)
+- [Deep Reference Archives](#-deep-reference-archives)
 - [The 10 Unified Modules Matrix](#-the-10-unified-modules-matrix)
-- [Automatic Task Routing](#-automatic-task-routing)
+- [Slash Command Routing Table](#-slash-command-routing-table)
 - [Core Feature Deep Dive](#-core-feature-deep-dive)
   - [1. AI Agent & Graph Workflow Engineering (ADK 2.0)](#1-ai-agent--graph-workflow-engineering-adk-20)
   - [2. Lazy-Efficient Coding (Ponytail)](#2-lazy-efficient-coding-ponytail)
@@ -26,11 +30,9 @@
   - [9. Verification Before Completion](#9-verification-before-completion)
   - [10. Autonomous Code Review](#10-autonomous-code-review)
   - [11. Architecture & Implementation Planning](#11-architecture--implementation-planning)
+- [Automation & Verification Utilities](#-automation--verification-utilities)
 - [Directory & Repository Structure](#-directory--repository-structure)
 - [Installation & Multi-Platform Setup](#-installation--multi-platform-setup)
-  - [For Google Antigravity & Gemini CLI](#for-google-antigravity--gemini-cli)
-  - [For Claude Code](#for-claude-code)
-  - [For Cursor, Windsurf, OpenCode & Other AI IDEs](#for-cursor-windsurf-opencode--other-ai-ides)
 - [Pre-Flight Quality Checklist](#-pre-flight-quality-checklist)
 - [Cookbook & Real-World Recipes](#-cookbook--real-world-recipes)
 - [License & Sources](#-license--sources)
@@ -45,13 +47,115 @@ Modern AI agent workflows suffer from **fragmentation and tool sprawl**:
 - You design animations, but they end up linear, laggy, or inaccessible.
 - You orchestrate agent systems with fragile monolithic prompts instead of deterministic state graphs.
 
-**Ultra Skill** solves this by consolidating the top open-source agent patterns and domain skills into an orchestrated, self-routing mega-skill. With Ultra Skill active, an AI assistant behaves like an elite principal engineer and creative director: ruthless on code simplicity, uncompromising on visual aesthetics, structured in multi-agent orchestration, and disciplined in debugging and verification.
+**Ultra Skill v3.0** solves this by establishing a deterministic, autonomous agentic workflow that unifies the top 10 open-source agent patterns into a coherent operating system.
+
+---
+
+## 🧭 The 6-Phase Agentic State Machine
+
+Every user request transitions through this deterministic 6-phase state machine:
+
+```
+[USER PROMPT]
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 0: INTAKE & INTENT ROUTING                       │
+│ • Parse request & detect domain / slash-command        │
+│ • Bind active subagent personas & reference manuals     │
+└────────────────────────────────────────────────────────┘
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 1: RECONNAISSANCE & EVIDENCE GATHERING           │
+│ • Audit existing codebase, dependencies, & type specs   │
+│ • Formulate Design Read (Frontend) or Trace Log (ADK)  │
+└────────────────────────────────────────────────────────┘
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 2: CONTRACT & ATOMIC DECOMPOSITION               │
+│ • Formulate implementation plan with zero-context specs│
+│ • Declare exact file paths, signatures, & TDD steps    │
+└────────────────────────────────────────────────────────┘
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 3: SUBAGENT EXECUTION LOOP                       │
+│ • Dispatch @architect, @engineer, @designer, @animator │
+│ • Apply Ponytail Ladder (shortest working diff)        │
+│ • Enforce strict TDD (Red-Green-Refactor)              │
+└────────────────────────────────────────────────────────┘
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 4: AUTONOMOUS REVIEW & SELF-CORRECTION           │
+│ • CodeRabbit triage (Critical -> Info) & secret scan   │
+│ • Detect AI slop (detect_ai_slop.py) & contrast audit  │
+└────────────────────────────────────────────────────────┘
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ STATE 5: GATE-FUNCTION VERIFICATION (MANDATORY)        │
+│ • Execute fresh verification command via terminal      │
+│ • Assert exit code 0 & zero test failures               │
+│ • Output structured completion receipt with proof      │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 👥 Specialized Subagent Roles & Personas
+
+When operating on complex tasks, Ultra Skill dispatches or role-plays dedicated subagents:
+
+| Subagent Role | Focus Area | Superpower & Responsibility | Specification |
+| :--- | :--- | :--- | :--- |
+| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
+| **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, stdlib first, shortest diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
+| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography & color locks. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
+| **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
+| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, boundary logs, 3-fix circuit breaker. | [debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md) |
+| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; no production code without failing tests. | [tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md) |
+| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, severity triage (Critical → Info). | [reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md) |
+| **`@verifier`** | Gatekeeper Verification | 5-step gate function, command execution verification, exit code 0 assertion. | [verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md) |
+
+---
+
+## 📋 Actionable Workflows Map
+
+Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20SKILLS/ultra-skill/workflows):
+
+1. [01: ADK 2.0 Graph & Multi-Agent Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md) — Production graph workflows, dynamic loops, and HITL
+2. [02: Subagent-Driven Development & Parallel Dispatch](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition & implementer/reviewer dispatch
+3. [03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
+4. [04: Cinematic Motion Choreography & Animation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
+5. [05: Systematic Root-Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
+6. [06: Test-Driven Development (TDD)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md) — Red-Green-Refactor pipeline
+7. [07: Autonomous Code Review & Security Audit](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md) — Automated security scan & severity-based triage
+8. [08: Design DNA Extraction & Style Transfer](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
+9. [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — Logos, banners, slides, and 3-tier tokens
+10. [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
+
+---
+
+## 📚 Deep Reference Archives
+
+Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-skill/references/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references):
+
+- **[references/adk/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)** — 11 packages: agent builder, architecture, debug, git, review, sample creator, setup, style, unit design, unit guide, verify snippets.
+- **[references/superpowers/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/superpowers)** — Subagent-driven dev, parallel dispatch, systematic debugging, TDD, verification gates, writing plans.
+- **[references/taste/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/taste)** — Anti-slop guidelines, brandkit, minimalist, brutalist, soft design, redesign skill, image-to-code.
+- **[references/ponytail/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ponytail)** — Lazy developer ladder, code audit, technical debt elimination, review rules.
+- **[references/gsap/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/gsap)** — Core API, timelines, ScrollTrigger, performance tuning, React/framework integration, utility helpers.
+- **[references/motion-design/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/motion-design)** — Motion director guide, choreography, Disney principles, emotion mapping, timing tables.
+- **[references/design-dna/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/design-dna)** — 3D schema, generation guide, color math, verification scripts.
+- **[references/ui-ux-pro-max/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ui-ux-pro-max)** — 55+ logo styles, 22 banner formats, corporate identity templates, design tokens.
+- **[references/coderabbit/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/coderabbit)** — Code review rules, CLI workflows, autonomous autofix loop, security audit rubrics.
 
 ---
 
 ## 🧩 The 10 Unified Modules Matrix
-
-Ultra Skill merges 10 battle-tested repositories and skills:
 
 | Module / Skill | Provenance / Upstream | Primary Superpower & Contribution |
 | :--- | :--- | :--- |
@@ -70,37 +174,19 @@ Ultra Skill merges 10 battle-tested repositories and skills:
 
 ---
 
-## 🧭 Automatic Task Routing
+## ⚡ Slash Command Routing Table
 
-You don't need to manually invoke sub-skills. Ultra Skill detects the intent and automatically activates the proper modules in synergy:
-
-```mermaid
-graph TD
-    UserRequest["User Prompt / Task"] --> Router{"Ultra Skill Task Router"}
-    
-    Router -->|"Agent / Graph Workflow"| ADK["ADK 2.0 + Ponytail + Verification"]
-    Router -->|"Frontend / Landing Page"| Frontend["Taste + GSAP + Motion + Ponytail + Design DNA"]
-    Router -->|"Bug / Investigation"| Debug["Systematic Debugging + TDD + Verification"]
-    Router -->|"Brand / Logos / Banners"| Brand["UI/UX Pro Max + Design DNA"]
-    Router -->|"Code Review / PR"| Review["CodeRabbit Review + ADK Standards"]
-    Router -->|"Refactor / Feature"| Code["Ponytail + TDD + Verification"]
-    Router -->|"Implementation Plan"| Plan["Superpowers Planning + Ponytail"]
-```
-
-### Module Activation Routing Table
-
-| Task Category | Active Modules | Synergy Benefit |
+| Slash Command / Intent | Active Subagents | Workflows & Modules Activated |
 | :--- | :--- | :--- |
-| **Building AI agents / graphs / pipelines** | §14 ADK Agent & Workflows + §1 Ponytail + §8 Verification | Deterministic graphs without bloated prompt chains. |
-| **Multi-agent orchestration / HITL** | §14 ADK Workflows + §15 ADK Architecture | Interrupt-safe workflows with human review checkpoints. |
-| **Agent diagnostics & trace inspection** | §16 ADK Debugging (`--jsonl`) + §6 Systematic Debugging | Headless event triage without spinning up unnecessary servers. |
-| **Frontend landing page / portfolio** | §2 Taste + §3 GSAP + §4 Motion + §5 Design DNA | Anti-slop aesthetics, custom fonts, 60fps choreographed motion. |
-| **Bug fixing / production incidents** | §6 Systematic Debugging + §7 TDD + §8 Verification | Guarantees root-cause resolution with a regression test. |
-| **New feature implementation** | §1 Ponytail + §7 TDD + §8 Verification | Clean, minimal diffs with 100% test proof. |
-| **Architecture / Feature planning** | §11 Writing Plans + §1 Ponytail | Executable blueprint designed for any engineer to ship. |
-| **Brand identity / slides / assets** | §9 UI/UX Pro Max + §5 Design DNA | Production-ready logos, banner dimensions, and design tokens. |
-| **PR & Code Review** | §10 Code Review + §17 Production Standards | Strict severity classification and security secret scanning. |
-| **All tasks upon completion** | **§8 Verification Before Completion (MANDATORY)** | Zero hallucinations; evidence provided before completion claims. |
+| `/agent` or `/workflow` | `@architect`, `@engineer` | Workflow 01 + §14 ADK Workflows + §1 Ponytail |
+| `/design` or `/frontend` | `@designer`, `@animator` | Workflow 03 + Workflow 04 + §2 Taste + §3 GSAP + §4 Motion |
+| `/debug` | `@debugger`, `@tester` | Workflow 05 + Workflow 06 + §6 Systematic Debugging + §7 TDD |
+| `/tdd` | `@tester`, `@engineer` | Workflow 06 + §7 TDD + §1 Ponytail |
+| `/review` or `/audit` | `@reviewer`, `@engineer` | Workflow 07 + §10 Code Review + `scripts/detect_ai_slop.py` |
+| `/plan` | `@architect`, `@engineer` | Workflow 02 + §11 Writing Plans + §1 Ponytail |
+| `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
+| `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
+| `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
 
 ---
 
@@ -136,25 +222,10 @@ Ultra Skill applies strict software engineering standards to AI agents, replacin
   ```
 - **Function Nodes & `@node` Decorators:**
   - `parallel_worker=True`: Automatically processes input collections concurrently across workers.
-  - `rerun_on_resume=True`: Guarantees re-execution when resuming an interrupted workflow (essential for dynamic loopers).
-- **Fan-Out / Fan-In Parallelism:** Execute concurrent tasks simultaneously and aggregate them with `JoinNode`:
-  ```python
-  join_step = JoinNode(name="aggregate_results")
-  root_agent = Workflow(
-      name="parallel_research",
-      edges=[("START", (fetch_web, fetch_db, fetch_docs), join_step, synthesize_node)],
-  )
-  ```
+  - `rerun_on_resume=True`: Guarantees re-execution when resuming an interrupted workflow.
+- **Fan-Out / Fan-In Parallelism:** Execute concurrent tasks simultaneously and aggregate them with `JoinNode`.
 - **Dynamic Scheduling:** Programmatically dispatch nodes at runtime with `await ctx.run_node(agent, node_input=...)`.
-- **Human-in-the-Loop (HITL) Interrupts:** Pause execution for user confirmation with `RequestInput(prompt="...", interrupt_id="...")`. When resumed, ADK fast-forwards through already completed steps without re-triggering side effects.
-- **Headless CLI Diagnostics:**
-  ```bash
-  # Triage agent events in real-time via JSONL
-  adk run --jsonl my_agent "Query" | jq 'select(.event_type == "tool_call")'
-  ```
-- **In-Memory Automated Unit Testing:** Test agents deterministically with `InMemoryRunner` without external browser dependencies.
-- **11 Embedded Deep Reference Manuals:** Bundled inside `skills/ultra-skill/references/adk/`:
-  - `adk-agent-builder`, `adk-architecture`, `adk-debug`, `adk-git`, `adk-review`, `adk-sample-creator`, `adk-setup`, `adk-style`, `adk-unit-design`, `adk-unit-guide`, `adk-verify-snippets`.
+- **Human-in-the-Loop (HITL) Interrupts:** Pause execution for user confirmation with `RequestInput(prompt="...", interrupt_id="...")`.
 
 ---
 
@@ -173,12 +244,6 @@ Ultra Skill adheres to the **Lazy Senior Developer Ladder** — evaluate every t
 6. **Can it be written in one clear line?** (Write that line).
 7. **Only then:** Write the minimum necessary code.
 
-#### Key Principles:
-- **No Unrequested Abstractions:** No single-implementation interfaces, no speculative factories.
-- **Root-Cause Fixes:** Patch bugs where all callers funnel through, not by masking symptoms.
-- **`# ponytail:` Annotations:** Explicitly comment on simplifications and delineate their upgrade triggers.
-- **Non-Negotiables:** Never simplify security, input boundaries, accessibility, or data loss protections.
-
 ---
 
 ### 3. Anti-Slop Frontend Design (Taste)
@@ -188,194 +253,115 @@ Ultra Skill completely eliminates generic AI slop from web apps and landing page
 
 #### Brief Inference & "The Design Read"
 Before writing HTML or CSS, Ultra Skill infers the project's true intent:
-- **Page Kind:** Landing page, personal portfolio, editorial, B2B SaaS.
-- **Vibe Language:** Minimalist, brutalist, luxury/premium, playful, technical.
-- **Target Audience:** Consumer, enterprise buyers, recruiters.
-- **Explicit Declaration:** Outputs a one-sentence *Design Read* before implementing.
-
-#### The Three Dials
-Every interface is calibrated along three numeric axes (1–10):
-- `DESIGN_VARIANCE` (Default: 8) — 1 (Pure Symmetry) to 10 (Controlled Asymmetry/Editorial Chaos).
-- `MOTION_INTENSITY` (Default: 6) — 1 (Static) to 10 (Cinematic Choreography).
-- `VISUAL_DENSITY` (Default: 4) — 1 (Airy/Spacious) to 10 (Dense/Information-Packed).
-
-#### Hard Design Invariants:
-- 🚫 **The Lila Rule:** No default purple/blue glowing cards or neon glows.
-- 🚫 **No Default Inter / Roboto:** Use personality-driven typefaces (Geist, Outfit, Cabinet Grotesk, Satoshi).
-- 🚫 **Ban on Generic Serifs:** Never insert random serif italic words into sans-serif headlines.
-- 🚫 **Hero Viewport Lock:** The hero section MUST fit inside `min-h-[100dvh]` without scrolling. Headline ≤ 2 lines, CTA visible above fold.
-- 🚫 **Logo Walls:** "Trusted by" strips belong *under* the hero, never inside the hero container.
-- 🚫 **No Fake Screenshot Divs:** Use real images (AI-generated, Picsum seed assets, or Simple Icons SVGs).
-- 🎨 **Color & Radius Consistency Lock:** Single accent color per page (saturation < 80%); uniform corner radius hierarchy throughout.
+- **Design Read:** Outputs a one-sentence *Design Read* declaring page kind, vibe, and audience.
+- **The Three Dials:** `DESIGN_VARIANCE` (1-10), `MOTION_INTENSITY` (1-10), `VISUAL_DENSITY` (1-10).
+- **Hard Invariants:**
+  - 🚫 No default purple glowing cards (The Lila Rule).
+  - 🚫 No Inter default font; use Geist, Outfit, Cabinet Grotesk, or Satoshi.
+  - 🚫 Hero section MUST fit inside `min-h-[100dvh]` with CTA above fold.
+  - 🚫 No div-based fake screenshots; use real imagery or Simple Icons SVGs.
+  - 🎨 Single accent color per page (saturation < 80%) with locked corner radii.
 
 ---
 
 ### 4. Professional Animation Engines (GSAP & Motion Design)
 *(Powered by `greensock/gsap-skills` & `LottieFiles/motion-design-skill`)*
 
-Motion must be motivated, believable, and performant.
-
-#### GSAP Rules & Canonical Patterns
 - **Transform Aliases Only:** Always animate `x`, `y`, `scale`, `rotation`, and `autoAlpha`. Never animate `top`, `left`, `width`, or `height`.
 - **Responsive Animations:** Utilize `gsap.matchMedia()` for responsive layouts and `prefers-reduced-motion` compliance.
-- **Blueprints:**
-  - *Sticky-Stack:* Smooth card stacking on scroll via pinned ScrollTrigger.
-  - *Horizontal-Pan:* Scrubbed horizontal timeline slider.
-  - *Scroll-Reveal:* Motion `whileInView` for lightweight element reveals.
-
-#### Emotion-Driven Choreography
-- **The Three Motion Layers (Always Present):**
-  1. *Primary Layer:* Main focal action (card enter, modal reveal).
-  2. *Secondary Layer:* Accompanying richness (icon drift, shadow displacement).
-  3. *Ambient Layer:* Environmental life (gentle gradient pulses, floating particles).
-- **Motion Archetypes:**
-  - *Playful:* 150–300ms, `ease-out-back`, 10–20% overshoot.
-  - *Premium:* 350–600ms, `cubic-bezier(0.4, 0, 0.2, 1)`, 0% overshoot.
-  - *Corporate:* 200–400ms, `cubic-bezier(0.2, 0, 0, 1)`, 0–3% overshoot.
-  - *Energetic:* 100–250ms, `ease-out-expo`, 15–30% overshoot.
-- **Accessibility:** `prefers-reduced-motion` media queries are mandatory for all `MOTION_INTENSITY > 3`.
+- **Three Motion Layers:** Primary (focal action), Secondary (accompanying reactions), Ambient (environmental life).
+- **Easing Semantics:** Never linear for spatial moves. Easing curves tailored to the project archetype (Playful, Premium, Corporate, Energetic).
 
 ---
 
-### 5. Visual Identity Extraction & Generation (Design DNA)
-*(Powered by `zanwei/design-dna`)*
-
-Extract design language from reference screenshots or live URLs and convert them into tokenized design systems:
-
-```text
-[ Reference Screenshot / URL ]
-             │
-             ▼
-┌──────────────────────────────────────────────┐
-│ Phase 1: Structure (JSON Schema Definition)  │
-└──────────────────────────────────────────────┘
-             │
-             ▼
-┌──────────────────────────────────────────────┐
-│ Phase 2: Analyze & Extract                   │
-│ • Deterministic color quantization           │
-│ • Typographic hierarchy & font pairing       │
-│ • Spacing, elevation, & border tokens        │
-└──────────────────────────────────────────────┘
-             │
-             ▼
-┌──────────────────────────────────────────────┐
-│ Phase 3: Tokenized Generation                │
-│ • CSS Custom Properties (:root)              │
-│ • Canvas / WebGL / Three.js Visual Effects   │
-│ • Production-ready semantic markup           │
-└──────────────────────────────────────────────┘
-```
-
----
-
-### 6. Brand Assets & Design Production (UI/UX Pro Max)
-*(Powered by `nextlevelbuilder/ui-ux-pro-max-skill`)*
-
-Generate professional marketing and corporate identity assets:
-- **Logo Generation:** 55+ distinct aesthetic styles across 30 curated palettes.
-- **Corporate Identity Packages (CIP):** Business cards, stationery, invoices, and brand books tailored to 20 specific industries.
-- **HTML Slide Presentations:** Tokenized presentation slide decks featuring Chart.js integration.
-- **Multi-Platform Ad & Social Banners:** Pre-calculated pixel-perfect dimensions:
-  - *Twitter/X Header:* 1500 × 500
-  - *LinkedIn Banner:* 1584 × 396
-  - *YouTube Channel Art:* 2560 × 1440
-  - *Instagram Post / Story:* 1080 × 1080 / 1080 × 1920
-  - *Google Ads Med Rectangle:* 300 × 250
-- **3-Tier Token Architecture:** `Primitive` (hex/values) → `Semantic` (intent) → `Component` (element specific).
-
----
-
-### 7. Systematic Debugging & Root Cause Analysis
+### 5. Systematic Debugging & TDD Discipline
 *(Powered by `obra/superpowers`)*
 
-> [!CAUTION]
-> **The Iron Law:** NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.
-
-Ultra Skill prohibits guessing, speculative tweaks, or applying fixes before discovering the root cause:
-- **Phase 1: Root Cause Investigation:** Read complete error traces, isolate reproducible steps, inspect `git diff`, and trace data flow across service boundaries.
-- **Phase 2: Pattern Analysis:** Locate working examples in the codebase and identify structural differences.
-- **Phase 3: Hypothesis & Minimal Test:** Formulate a single testable hypothesis (`"I hypothesize X because Y"`). Test with one isolated variable change.
-- **Phase 4: Implementation & The 3-Fix Circuit Breaker:** Implement a single surgical fix backed by a failing test. If 3 consecutive fix attempts fail, **halt execution immediately** to re-evaluate the architectural assumptions.
+- **The Iron Law of Debugging:** NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.
+  - 4 Phases: Investigate → Pattern Analysis → Hypothesis → Surgical Fix.
+  - The 3-Fix Circuit Breaker: Halt immediately if 3 fix attempts fail.
+- **The Iron Law of TDD:** NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
+  - Red → Verify Red → Green → Verify Green → Refactor.
 
 ---
 
-### 8. Test-Driven Development (TDD)
+### 6. Verification Before Completion
 *(Powered by `obra/superpowers`)*
 
-> [!IMPORTANT]
-> **The Iron Law:** NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
-
-1. **RED:** Author an atomic, minimal failing test reflecting the requirement.
-2. **Verify RED:** Run the test suite and confirm failure for the expected reason.
-3. **GREEN:** Write the simplest possible implementation to make the test pass.
-4. **Verify GREEN:** Confirm all tests pass with zero regressions.
-5. **REFACTOR:** Clean up code, remove duplication, and preserve green tests.
+- **The Iron Law:** NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE.
+- **The 5-Step Gate Function:** Identify → Run → Read → Audit → Announce.
+- Strictly bans "should work", "probably fixed", or "seems to be working" without attached terminal logs.
 
 ---
 
-### 9. Verification Before Completion
-*(Powered by `obra/superpowers`)*
+## 🛠️ Automation & Verification Utilities
 
-> [!WARNING]
-> **The Iron Law:** NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE.
+Ultra Skill includes automated diagnostic and verification tools in [scripts/](file:///d:/Agent%20SKILLS/ultra-skill/scripts):
 
-Before stating that any task is finished, Ultra Skill executes the **5-Step Gate Function**:
-1. **IDENTIFY:** Determine the exact terminal command that proves the claim.
-2. **RUN:** Execute the command synchronously and freshly.
-3. **READ:** Read the full stdout/stderr, check exit code (`0`), and verify zero failures.
-4. **VERIFY:** Confirm the output matches all user requirements.
-5. **ONLY THEN:** Announce completion.
-
-Words such as *"should work"*, *"probably fixed"*, or *"seems fine"* are strictly prohibited.
-
----
-
-### 10. Autonomous Code Review
-*(Powered by `coderabbitai/skills`)*
-
-- **Severity Classification:** Issues are triaged as `Critical`, `Major`, `Minor`, `Trivial`, or `Info`.
-- **Security-First Analysis:** Scans for leaked credentials, API tokens, untrusted inputs, and injection vectors.
-- **Autonomous Review Loop:** Generates diff → runs review → prioritizes Critical/Major issues → applies surgical fixes → verifies fixes with test suite.
-
----
-
-### 11. Architecture & Implementation Planning
-*(Powered by `obra/superpowers`)*
-
-Plans are authored for an engineer who has never seen the codebase:
-- Specifies exact target file paths, complete function signatures, and consumed/produced types.
-- Breaks down features into atomic TDD tasks (Write failing test → Verify fail → Write code → Verify pass → Commit).
-- Conducts a 5-point self-review: Spec coverage, single-action steps, naming consistency, edge-case test coverage, and concise scope.
+- **Gate Verification Runner (`scripts/verify_evidence.py`):**
+  Runs any test or build command, captures full stdout/stderr, verifies exit code `0`, and prints a structured pass/fail verdict.
+  ```bash
+  python scripts/verify_evidence.py "pytest tests/"
+  ```
+- **AI Slop Detector (`scripts/detect_ai_slop.py`):**
+  Audits HTML, CSS, JSX, and TSX files for generic AI design tropes (Inter font defaults, purple gradients, `h-screen` bugs, fake browser divs).
+  ```bash
+  python scripts/detect_ai_slop.py ./src
+  ```
+- **ADK Trace Inspector (`scripts/adk_trace_inspector.py`):**
+  Parses JSONL event streams from `adk run --jsonl`, extracts tool calls, verifies schema fidelity, and flags execution errors.
+  ```bash
+  adk run --jsonl my_agent "Query" | python scripts/adk_trace_inspector.py
+  ```
 
 ---
 
 ## 📂 Directory & Repository Structure
 
-The `ultra-skill` distribution is organized as follows:
-
 ```text
 ultra-skill/
-├── AGENTS.md                  # Universal agent behavior rules (active by default)
+├── AGENTS.md                  # Universal agent behavior rules & subagent registry
 ├── CLAUDE.md                  # Claude Code integration pointer
 ├── GEMINI.md                  # Gemini CLI integration pointer
-├── README.md                  # This comprehensive guide
+├── README.md                  # This master documentation
+├── .gitignore                 # Standard Python, IDE, and log ignore rules
+├── agents/                    # Specialized subagent personas
+│   ├── architect.md           # @architect: ADK 2.0 graph builder
+│   ├── engineer.md            # @engineer: Ponytail lazy senior dev
+│   ├── designer.md            # @designer: Taste & Design DNA creator
+│   ├── animator.md            # @animator: GSAP & Motion choreographer
+│   ├── debugger.md            # @debugger: 4-phase root cause investigator
+│   ├── tester.md              # @tester: TDD quality enforcer
+│   ├── reviewer.md            # @reviewer: CodeRabbit security auditor
+│   └── verifier.md            # @verifier: Gatekeeper evidence inspector
+├── workflows/                 # Executable agentic workflow guides
+│   ├── 01-agent-graph-orchestration.md
+│   ├── 02-subagent-driven-development.md
+│   ├── 03-anti-slop-frontend-design.md
+│   ├── 04-cinematic-motion-choreography.md
+│   ├── 05-systematic-root-cause-debugging.md
+│   ├── 06-test-driven-development.md
+│   ├── 07-autonomous-code-review.md
+│   ├── 08-design-dna-extraction.md
+│   ├── 09-brand-asset-production.md
+│   └── 10-gate-function-verification.md
+├── scripts/                   # Automated quality and verification tools
+│   ├── verify_evidence.py     # Gate-function test & build verifier
+│   ├── detect_ai_slop.py      # Frontend AI design anti-slop linter
+│   └── adk_trace_inspector.py # Headless ADK JSONL trace triage
 └── skills/
     └── ultra-skill/
         ├── SKILL.md           # Master skill definition & full instruction manual
-        └── references/
-            └── adk/           # Deep reference documentation for ADK 2.0
-                ├── adk-agent-builder/      # Agent creation patterns & CLI rules
-                ├── adk-architecture/       # Context/Event dual-channel runtime
-                ├── adk-debug/              # CLI triage, logs, & JSONL inspection
-                ├── adk-git/                # Commit and release workflows
-                ├── adk-review/             # Code standards & static review rules
-                ├── adk-sample-creator/     # Guidelines for reference agent samples
-                ├── adk-setup/              # Installation, uv, and dependencies
-                ├── adk-style/              # Python conventions & typing guides
-                ├── adk-unit-design/        # Node contract & interface design
-                ├── adk-unit-guide/         # Workflow graph development rules
-                └── adk-verify-snippets/    # Code snippet verification harness
+        └── references/        # Deep reference archives from all 10 upstream systems
+            ├── adk/           # 11 Google ADK 2.0 packages
+            ├── superpowers/   # Subagent dev, parallel dispatch, TDD, debugging
+            ├── taste/         # Anti-slop, minimalist, brutalist, soft, brandkit
+            ├── ponytail/      # Laziness ladder, code audit, debt, review
+            ├── gsap/          # Core, scrolltrigger, react, timelines, performance
+            ├── motion-design/ # Director guide, choreography, emotion mapping
+            ├── design-dna/    # Schema, generation guide, color math
+            ├── ui-ux-pro-max/ # Design tokens, logo catalogs, banner specs
+            └── coderabbit/    # Review workflows, autofix, CLI tools
 ```
 
 ---
@@ -383,7 +369,6 @@ ultra-skill/
 ## 🚀 Installation & Multi-Platform Setup
 
 ### For Google Antigravity & Gemini CLI
-To install as a local skill in your Antigravity or Gemini project:
 ```bash
 # Windows PowerShell
 New-Item -ItemType Directory -Force -Path "$HOME\.agents\skills"
@@ -397,16 +382,16 @@ cp -r "ultra-skill/skills/ultra-skill" ~/.agents/skills/
 
 ### For Claude Code
 ```bash
-# Copy agent instruction pointers to your project root
+# Copy agent instruction pointers to project root
 cp ultra-skill/CLAUDE.md ultra-skill/AGENTS.md /path/to/my-project/
 
-# Copy the skill into Claude's skill registry
+# Copy skill to Claude's skill registry
 mkdir -p /path/to/my-project/.claude/skills
 cp -r ultra-skill/skills/ultra-skill /path/to/my-project/.claude/skills/
 ```
 
 ### For Cursor, Windsurf, OpenCode & Other AI IDEs
-Simply add `AGENTS.md` to your workspace root or configure your agent to read `skills/ultra-skill/SKILL.md`. The instructions are completely self-contained and framework-agnostic.
+Simply copy `AGENTS.md` to your workspace root or configure your AI agent to read `skills/ultra-skill/SKILL.md`.
 
 ---
 
@@ -420,7 +405,6 @@ Ultra Skill performs this verification audit before submitting any final respons
 - [ ] Every tool parameter has strict type annotations and docstring explanations?
 - [ ] Graph edges start at `"START"` and resolve to terminal outputs without loops?
 - [ ] Fan-out nodes are converged with a `JoinNode`?
-- [ ] Nodes using `ctx.run_node` are decorated with `@node(rerun_on_resume=True)`?
 - [ ] Verified headlessly with `adk run --jsonl` or `InMemoryRunner`?
 
 ### 💻 Code & Refactoring Tasks
@@ -428,19 +412,17 @@ Ultra Skill performs this verification audit before submitting any final respons
 - [ ] No unrequested abstractions, factories, or speculative scaffolding?
 - [ ] TDD cycle followed (failing test written and verified before implementation)?
 - [ ] Root cause identified and solved rather than masked?
-- [ ] Deliberate simplifications documented with `# ponytail:`?
 
 ### 🎨 Frontend & Design Tasks
-- [ ] Initial *Design Read* one-liner output before code was written?
-- [ ] The Three Dials (`VARIANCE`, `MOTION`, `DENSITY`) explicitly set?
+- [ ] Initial *Design Read* declared before code was written?
+- [ ] The Three Dials (`VARIANCE`, `MOTION`, `DENSITY`) explicitly calibrated?
 - [ ] Hero section strictly fits `min-h-[100dvh]` with CTA above fold?
 - [ ] Single accent color and unified border radius used across the entire page?
 - [ ] Color contrast passes WCAG AA (4.5:1 text, 3:1 display)?
-- [ ] Zero AI clichés (no Inter default, no purple glow, no fake screenshot divs)?
-- [ ] All motion has 3 layers and respects `prefers-reduced-motion`?
+- [ ] Zero AI clichés (audited via `scripts/detect_ai_slop.py`)?
 
 ### 🛡️ Completion Verification (All Tasks)
-- [ ] Actual terminal verification command executed?
+- [ ] Terminal verification command executed via `scripts/verify_evidence.py`?
 - [ ] Output verified for zero errors and exit code `0`?
 - [ ] Completion claims backed strictly by visible output logs?
 
