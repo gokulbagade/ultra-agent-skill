@@ -143,6 +143,7 @@ Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20
 12. [12: Implementation Planning & Progress Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
 13. [13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retries, circuit breaker tripping & atomic workspace rollback
 14. [14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame rate budgets
+15. [15: Skill Implementation & Proper .agents Folder Arrangement](file:///d:/Agent%20SKILLS/ultra-skill/workflows/15-skill-implementation-and-installation.md) — Automated installer & standardized .agents directory layout
 
 ---
 
@@ -201,6 +202,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
 | `/recover` | `@architect`, `@debugger` | Workflow 13 (Error Recovery & Rollback) + §6 Debugging |
 | `/perf` | `@animator`, `@engineer` | Workflow 14 (Performance Profiling) + §12 Performance Guardrails |
+| `/install` or `/implement` | `@architect`, `@engineer` | Workflow 15 (Skill Implementation & Layout) + `scripts/install_skill.py` |
 
 ---
 
@@ -386,14 +388,17 @@ ultra-skill/
 │   ├── 11-interactive-architecture-visualization.md
 │   ├── 12-implementation-planning-and-checklists.md
 │   ├── 13-error-recovery-and-graceful-degradation.md
-│   └── 14-performance-profiling-and-optimization.md
-├── scripts/                   # Automated quality and verification tools
+│   ├── 14-performance-profiling-and-optimization.md
+│   └── 15-skill-implementation-and-installation.md
+├── scripts/                   # Automated quality, installation and verification tools
+│   ├── install_skill.py       # Automated .agents folder installer & layout manager
 │   ├── verify_evidence.py     # Gate-function test & build verifier (JSON + save)
 │   ├── detect_ai_slop.py      # Frontend AI design anti-slop auditor & fixer
 │   ├── contrast_checker.py    # Automated WCAG AA/AAA contrast ratio auditor
 │   ├── plan_validator.py      # Implementation plan §11 schema validator
 │   └── adk_trace_inspector.py # Headless ADK JSONL trace & latency triage
 ├── tests/                     # Unit test suites for scripts
+│   ├── test_install_skill.py
 │   ├── test_detect_ai_slop.py
 │   ├── test_verify_evidence.py
 │   ├── test_contrast_checker.py
@@ -402,8 +407,11 @@ ultra-skill/
 ├── CHANGELOG.md               # Version history and migration notes
 ├── LICENSE                    # MIT License
 └── skills/
-    └── ultra-skill/
+    └── ultra-skill/           # 100% Self-contained distributable bundle
         ├── SKILL.md           # Master skill definition & full instruction manual
+        ├── agents/            # Bundled subagent persona markdown specs
+        ├── workflows/         # Bundled workflow execution guides (01-15)
+        ├── scripts/           # Bundled Python quality & verification scripts
         └── references/        # Deep reference archives from all 11 upstream systems
             ├── archify/       # Archify CLI engine, 5 diagram schemas, recipes
             ├── adk/           # 11 Google ADK 2.0 packages
@@ -421,7 +429,44 @@ ultra-skill/
 
 ## 🚀 Installation & Multi-Platform Setup
 
-### For Google Antigravity & Gemini CLI
+### ⚡ Automated Installation (Recommended)
+Ultra Skill includes an automated installer (`scripts/install_skill.py`) that strictly organizes all files into the standardized `.agents/` folder topology, copies the self-contained skill bundle, exposes subagent definitions to `.agents/agents/`, links rules to `.agents/rules/`, and establishes project root entrypoints:
+
+```bash
+# Install to any project workspace
+python scripts/install_skill.py /path/to/my-project
+
+# Or install to global user config directory (~/.agents)
+python scripts/install_skill.py --global
+```
+
+#### Canonical Installed `.agents` Directory Topology:
+```
+<project_root>/
+├── .agents/
+│   ├── skills/
+│   │   └── ultra-skill/        # Complete self-contained skill bundle
+│   │       ├── SKILL.md
+│   │       ├── agents/
+│   │       ├── workflows/
+│   │       ├── scripts/
+│   │       └── references/
+│   ├── agents/                 # Top-level subagent personas for platform discovery
+│   │   ├── architect.md
+│   │   ├── engineer.md
+│   │   ├── designer.md
+│   │   └── ... (all 10 subagents)
+│   └── rules/                  # Workspace rule definitions
+│       └── AGENTS.md
+├── AGENTS.md                   # Root agent instruction entrypoint
+├── CLAUDE.md                   # Anthropic Claude Code entrypoint
+├── GEMINI.md                   # Google Gemini CLI entrypoint
+└── .slopignore                 # Anti-slop exclusion rules
+```
+
+### Manual Installation
+
+#### For Google Antigravity & Gemini CLI
 ```bash
 # Windows PowerShell
 New-Item -ItemType Directory -Force -Path "$HOME\.agents\skills"
@@ -433,18 +478,16 @@ mkdir -p ~/.agents/skills
 cp -r "ultra-skill/skills/ultra-skill" ~/.agents/skills/
 ```
 
-### For Claude Code
+#### For Claude Code
 ```bash
-# Copy agent instruction pointers to project root
+# Run the automated installer or manually configure:
 cp ultra-skill/CLAUDE.md ultra-skill/AGENTS.md /path/to/my-project/
-
-# Copy skill to Claude's skill registry
 mkdir -p /path/to/my-project/.claude/skills
 cp -r ultra-skill/skills/ultra-skill /path/to/my-project/.claude/skills/
 ```
 
-### For Cursor, Windsurf, OpenCode & Other AI IDEs
-Simply copy `AGENTS.md` to your workspace root or configure your AI agent to read `skills/ultra-skill/SKILL.md`.
+#### For Cursor, Windsurf, OpenCode & Other AI IDEs
+Run `python scripts/install_skill.py .` in your workspace root, or copy `AGENTS.md` to your workspace root and point your AI assistant to `.agents/skills/ultra-skill/SKILL.md`.
 
 ---
 

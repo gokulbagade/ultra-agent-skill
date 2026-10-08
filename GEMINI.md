@@ -6,16 +6,20 @@
 
 ## ⚡ Skill Discovery & Execution
 
-### 1. Skill Discovery Paths
-Antigravity automatically discovers skills from:
-- **Workspace Customizations Root:** `.agents/skills/ultra-skill`
+### 1. Skill Discovery & Canonical .agents Layout
+Antigravity automatically discovers skills and personas from:
+- **Workspace Customizations Root:** `.agents/skills/ultra-skill` (Skill instructions)
+- **Top-Level Agent Personas:** `.agents/agents/` (e.g. `architect.md`, `engineer.md`)
+- **Rules Directory:** `.agents/rules/` (`AGENTS.md`)
 - **Global Customizations Root:** `~/.gemini/config/skills/ultra-skill` or `~/.agents/skills/ultra-skill`
 
-To register Ultra Skill in a target project:
+**MANDATORY RULE:** Whenever asked to implement or install Ultra Skill, arrange all files inside the target `.agents/` structure using the automated installer:
 ```bash
-# Windows PowerShell
-New-Item -ItemType Directory -Force -Path "$HOME\.agents\skills"
-Copy-Item -Recurse -Force "d:\Agent SKILLS\ultra-skill\skills\ultra-skill" "$HOME\.agents\skills\ultra-skill"
+python scripts/install_skill.py /path/to/target-project
+```
+Or for global installation:
+```bash
+python scripts/install_skill.py --global
 ```
 
 ### 2. State Machine Adherence

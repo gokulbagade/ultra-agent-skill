@@ -41,3 +41,10 @@ python scripts/contrast_checker.py "#ffffff" "#0f172a"
 
 ### 4. Error Recovery (Workflow 13)
 If a tool or operation fails 3 consecutive times, trip the circuit breaker. Do not make a 4th blind attempt. Clean workspace with `git checkout -- .` and present options to the user.
+
+### 5. Proper .agents Folder Arrangement (Workflow 15)
+Whenever asked to implement or install Ultra Skill in any workspace, **never dump files loosely into the workspace root**. Strictly organize all assets inside the canonical `.agents/` structure via the automated installer:
+```bash
+python scripts/install_skill.py /path/to/target-project
+```
+This ensures `.agents/skills/ultra-skill/` (self-contained bundle), `.agents/agents/` (subagents), and `.agents/rules/` are placed correctly.

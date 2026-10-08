@@ -135,6 +135,7 @@ Execute step-by-step procedures documented in the `workflows/` directory:
 12. [12-implementation-planning-and-checklists.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
 13. [13-error-recovery-and-graceful-degradation.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retry, circuit breaker & atomic workspace rollback
 14. [14-performance-profiling-and-optimization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame budgets
+15. [15-skill-implementation-and-installation.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/15-skill-implementation-and-installation.md) — Standardized implementation & proper `.agents` folder arrangement
 
 ---
 
@@ -170,6 +171,47 @@ Deep technical documentation, prompt templates, and code catalogs are bundled in
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
 | `/recover` | `@architect`, `@debugger` | Workflow 13 (Error Recovery & Rollback) + §6 Debugging |
 | `/perf` | `@animator`, `@engineer` | Workflow 14 (Performance Profiling) + §12 Performance Guardrails |
+| `/install` or `/implement` | `@architect`, `@engineer` | Workflow 15 (Skill Implementation) + `scripts/install_skill.py` |
+
+---
+
+## 0.5 MANDATORY IMPLEMENTATION RULE: PROPER `.AGENTS` FOLDER ARRANGEMENT
+
+Whenever instructed by a user to **"implement this skill"**, **"install this skill"**, or **"apply ultra-skill to a project"**:
+The agent **MUST ALWAYS** arrange the files properly inside the target repository's `.agents` directory structure:
+
+```text
+<target-project-root>/
+├── .agents/
+│   ├── skills/
+│   │   └── ultra-skill/               # Self-contained skill engine
+│   │       ├── SKILL.md               # Master skill definition & frontmatter
+│   │       ├── agents/                # Bundled subagent persona specs
+│   │       ├── workflows/             # All 15 executable workflows
+│   │       ├── scripts/               # Quality & verification tools
+│   │       └── references/            # Upstream reference archives
+│   ├── agents/                        # Top-level personas for direct IDE discovery
+│   │   ├── planner.md
+│   │   ├── architect.md
+│   │   ├── visualizer.md
+│   │   ├── engineer.md
+│   │   ├── designer.md
+│   │   ├── animator.md
+│   │   ├── debugger.md
+│   │   ├── tester.md
+│   │   ├── reviewer.md
+│   │   └── verifier.md
+│   └── rules/                         # Customization rules
+│       └── AGENTS.md                  # State machine & behavioral rules
+├── AGENTS.md                          # Root agent configuration pointer
+├── CLAUDE.md                          # Claude Code entrypoint
+├── GEMINI.md                          # Gemini CLI / Antigravity entrypoint
+└── .slopignore                        # Anti-slop whitelist configuration
+```
+
+- **Automated Execution:** Run `python scripts/install_skill.py <path_to_target_project>` (or `python .agents/skills/ultra-skill/scripts/install_skill.py <target>`).
+- **Never Dump Loosely:** Do NOT scatter individual workflow or persona files in the project root. Encapsulate within `.agents/` as specified.
+
 
 
 

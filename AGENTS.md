@@ -30,6 +30,26 @@ Whenever a new task or plan begins:
 
 ---
 
+## 🚀 MANDATORY IMPLEMENTATION RULE: PROPER .AGENTS FOLDER ARRANGEMENT
+
+Whenever instructed by a user to **"implement this skill"**, **"install this skill"**, or **"apply ultra-skill to a project"**:
+YOU MUST ALWAYS arrange the files properly inside the target repository's `.agents` directory structure:
+
+1. **`.agents/skills/ultra-skill/`**: Self-contained skill bundle containing:
+   - `SKILL.md` (master instructions & frontmatter)
+   - `agents/` (all 10 subagent persona specs)
+   - `workflows/` (all 15 executable workflow guides)
+   - `scripts/` (all 6 quality & verification tools)
+   - `references/` (upstream reference manuals)
+2. **`.agents/agents/`**: The 10 subagent persona files (`planner.md`, `architect.md`, `visualizer.md`, `engineer.md`, `designer.md`, `animator.md`, `debugger.md`, `tester.md`, `reviewer.md`, `verifier.md`) for direct subagent discovery by IDE harnesses.
+3. **`.agents/rules/`**: Customization rules (including `AGENTS.md`).
+4. **Project Root**: Deploy `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, and `.slopignore`.
+
+**Automated Command:** Run `python scripts/install_skill.py <path_to_target_project>` to guarantee this arrangement automatically.
+**Strict Proscription:** NEVER dump loose skill files or individual workflow files directly into the workspace root. Always encapsulate inside `.agents/`.
+
+---
+
 ## 👥 Subagent Roles & Personas
 
 When executing specialized tasks, assume or dispatch these dedicated subagent roles:
