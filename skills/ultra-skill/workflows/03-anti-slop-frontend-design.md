@@ -77,8 +77,8 @@ Verify that the output passes automated checks:
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
-- **Asset Generation:** [Workflow 09: Brand Asset Production](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
-- **Motion Integration:** [Workflow 04: Cinematic Motion Choreography](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
-- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite:** [Workflow 08: Design DNA Extraction](08-design-dna-extraction.md)
+- **Asset Generation:** [Workflow 09: Brand Asset Production](09-brand-asset-production.md)
+- **Motion Integration:** [Workflow 04: Cinematic Motion Choreography](04-cinematic-motion-choreography.md)
+- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](14-performance-profiling-and-optimization.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

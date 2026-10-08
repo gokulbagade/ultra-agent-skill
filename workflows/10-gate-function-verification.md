@@ -69,7 +69,7 @@ The agent MUST NEVER use these phrases without attached command evidence:
 ---
 
 ## 🔗 Related Workflows
-- **Triggering Workflows:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md), [Workflow 06: Test-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
-- **Code Review Gate:** [Workflow 07: Autonomous Code Review](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md)
-- **Failure Remediation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md), [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
-- **Performance Gate:** [Workflow 14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md)
+- **Triggering Workflows:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md), [Workflow 06: Test-Driven Development](06-test-driven-development.md)
+- **Code Review Gate:** [Workflow 07: Autonomous Code Review](07-autonomous-code-review.md)
+- **Failure Remediation:** [Workflow 05: Systematic Root Cause Debugging](05-systematic-root-cause-debugging.md), [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)
+- **Performance Gate:** [Workflow 14: Performance Profiling & Optimization](14-performance-profiling-and-optimization.md)

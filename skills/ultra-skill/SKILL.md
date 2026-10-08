@@ -104,16 +104,16 @@ Activate or role-play these specialized subagents depending on the active state:
 
 | Subagent Role | Domain / Skill Focus | Primary Responsibility | Persona Spec |
 | :--- | :--- | :--- | :--- |
-| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk matrix & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
-| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, resilience & circuit breakers. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
-| **`@visualizer`** | Archify & Visual QA | Interactive architecture diagrams (SVG/HTML), visual regression QA & design-to-code synthesis. | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
-| **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, standard library first, shortest working diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
-| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, responsive ladder, 4px grid, dark mode & contrast locks. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
-| **`@animator`** | GSAP + Motion Design | 60fps GPU frame budgets, animation inventory, 3 motion layers, ScrollTrigger cleanup. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
-| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, distributed tracing, memory leak forensics & circuit breakers. | [debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md) |
-| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; coverage targets (80% line, 70% branch) & quarantine protocols. | [tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md) |
-| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, dependency audits & license compliance. | [reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md) |
-| **`@verifier`** | Gate Verification | Parallel verification matrices, receipt archival (`.verification/`), exit code 0 gate. | [verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md) |
+| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk matrix & interactive progress checklists (`- [ ]`). | [planner.md](agents/planner.md) |
+| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, resilience & circuit breakers. | [architect.md](agents/architect.md) |
+| **`@visualizer`** | Archify & Visual QA | Interactive architecture diagrams (SVG/HTML), visual regression QA & design-to-code synthesis. | [visualizer.md](agents/visualizer.md) |
+| **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, standard library first, shortest working diff wins. | [engineer.md](agents/engineer.md) |
+| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, responsive ladder, 4px grid, dark mode & contrast locks. | [designer.md](agents/designer.md) |
+| **`@animator`** | GSAP + Motion Design | 60fps GPU frame budgets, animation inventory, 3 motion layers, ScrollTrigger cleanup. | [animator.md](agents/animator.md) |
+| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, distributed tracing, memory leak forensics & circuit breakers. | [debugger.md](agents/debugger.md) |
+| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; coverage targets (80% line, 70% branch) & quarantine protocols. | [tester.md](agents/tester.md) |
+| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, dependency audits & license compliance. | [reviewer.md](agents/reviewer.md) |
+| **`@verifier`** | Gate Verification | Parallel verification matrices, receipt archival (`.verification/`), exit code 0 gate. | [verifier.md](agents/verifier.md) |
 
 ---
 
@@ -121,37 +121,37 @@ Activate or role-play these specialized subagents depending on the active state:
 
 Execute step-by-step procedures documented in the `workflows/` directory:
 
-1. [01-agent-graph-orchestration.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md) — ADK 2.0 multi-agent pipelines & graph workflows
-2. [02-subagent-driven-development.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
-3. [03-anti-slop-frontend-design.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
-4. [04-cinematic-motion-choreography.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
-5. [05-systematic-root-cause-debugging.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
-6. [06-test-driven-development.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md) — Red-Green-Refactor pipeline
-7. [07-autonomous-code-review.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md) — Automated security scan & severity-based triage
-8. [08-design-dna-extraction.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
-9. [09-brand-asset-production.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — UI/UX Pro Max logos, banners, slides, and 3-tier tokens
-10. [10-gate-function-verification.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
-11. [11-interactive-architecture-visualization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
-12. [12-implementation-planning-and-checklists.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
-13. [13-error-recovery-and-graceful-degradation.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retry, circuit breaker & atomic workspace rollback
-14. [14-performance-profiling-and-optimization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame budgets
-15. [15-skill-implementation-and-installation.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/15-skill-implementation-and-installation.md) — Standardized implementation & proper `.agents` folder arrangement
+1. [01-agent-graph-orchestration.md](workflows/01-agent-graph-orchestration.md) — ADK 2.0 multi-agent pipelines & graph workflows
+2. [02-subagent-driven-development.md](workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
+3. [03-anti-slop-frontend-design.md](workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
+4. [04-cinematic-motion-choreography.md](workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
+5. [05-systematic-root-cause-debugging.md](workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
+6. [06-test-driven-development.md](workflows/06-test-driven-development.md) — Red-Green-Refactor pipeline
+7. [07-autonomous-code-review.md](workflows/07-autonomous-code-review.md) — Automated security scan & severity-based triage
+8. [08-design-dna-extraction.md](workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
+9. [09-brand-asset-production.md](workflows/09-brand-asset-production.md) — UI/UX Pro Max logos, banners, slides, and 3-tier tokens
+10. [10-gate-function-verification.md](workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
+11. [11-interactive-architecture-visualization.md](workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
+12. [12-implementation-planning-and-checklists.md](workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
+13. [13-error-recovery-and-graceful-degradation.md](workflows/13-error-recovery-and-graceful-degradation.md) — Transient retry, circuit breaker & atomic workspace rollback
+14. [14-performance-profiling-and-optimization.md](workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame budgets
+15. [15-skill-implementation-and-installation.md](workflows/15-skill-implementation-and-installation.md) — Standardized implementation & proper `.agents` folder arrangement
 
 ---
 
 ## 0.3 DEEP REFERENCE ARCHIVES
 
 Deep technical documentation, prompt templates, and code catalogs are bundled in `references/`:
-- **Archify:** [references/archify/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/archify) — CLI engine, 5 diagram schemas, recipes, brand marks.
-- **ADK 2.0 (11 packages):** [references/adk/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)
-- **Superpowers:** [references/superpowers/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/superpowers)
-- **Taste Skill:** [references/taste/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/taste)
-- **Ponytail:** [references/ponytail/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ponytail)
-- **GSAP:** [references/gsap/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/gsap)
-- **Motion Design:** [references/motion-design/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/motion-design)
-- **Design DNA:** [references/design-dna/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/design-dna)
-- **UI/UX Pro Max:** [references/ui-ux-pro-max/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ui-ux-pro-max)
-- **CodeRabbit:** [references/coderabbit/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/coderabbit)
+- **Archify:** [references/archify/](references/archify) — CLI engine, 5 diagram schemas, recipes, brand marks.
+- **ADK 2.0 (11 packages):** [references/adk/](references/adk)
+- **Superpowers:** [references/superpowers/](references/superpowers)
+- **Taste Skill:** [references/taste/](references/taste)
+- **Ponytail:** [references/ponytail/](references/ponytail)
+- **GSAP:** [references/gsap/](references/gsap)
+- **Motion Design:** [references/motion-design/](references/motion-design)
+- **Design DNA:** [references/design-dna/](references/design-dna)
+- **UI/UX Pro Max:** [references/ui-ux-pro-max/](references/ui-ux-pro-max)
+- **CodeRabbit:** [references/coderabbit/](references/coderabbit)
 
 ---
 

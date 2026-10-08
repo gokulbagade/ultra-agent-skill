@@ -10,6 +10,7 @@ Installs and arranges Ultra Skill properly inside the target project's `.agents`
 
 import sys
 import os
+import re
 import shutil
 import json
 import argparse
@@ -47,12 +48,42 @@ def copy_file(src: Path, dst: Path, force: bool = False) -> bool:
     return True
 
 
-def install_ultra_skill(target_dir: Path, force: bool = False, as_global: bool = False) -> dict:
+def adapt_workspace_entrypoints(content: str) -> str:
+    """Adapts root entrypoint documentation to reference the target project's .agents directory."""
+    # Ensure any previous hardcoded absolute paths are removed
+    content = content.replace("file:///d:/Agent%20SKILLS/ultra-skill/", "")
+    
+    # Use negative lookbehind to avoid duplicate prefixes
+    content = re.sub(r'(?<![.\w/])skills/ultra-skill/', '.agents/skills/ultra-skill/', content)
+    content = re.sub(r'(?<![.\w/])agents/', '.agents/agents/', content)
+    content = re.sub(r'(?<![.\w/])scripts/', '.agents/skills/ultra-skill/scripts/', content)
+    content = re.sub(r'(?<![.\w/])workflows/', '.agents/skills/ultra-skill/workflows/', content)
+    return content
+
+
+def clean_loose_root_folders(target_dir: Path) -> list:
+    """Cleans up loose root folders (skills, agents, workflows, scripts, tests) if target is not SOURCE_ROOT."""
+    cleaned = []
+    if target_dir.resolve() == SOURCE_ROOT.resolve():
+        return cleaned
+
+    for folder_name in ("skills", "agents", "workflows", "scripts", "tests"):
+        loose_dir = target_dir / folder_name
+        if loose_dir.exists() and loose_dir.is_dir():
+            shutil.rmtree(loose_dir, ignore_errors=True)
+            cleaned.append(str(loose_dir))
+    return cleaned
+
+
+def install_ultra_skill(
+    target_dir: Path, force: bool = False, as_global: bool = False, clean_root: bool = False
+) -> dict:
     """Installs and properly arranges Ultra Skill in target project or global config."""
     result = {
         "target_directory": str(target_dir),
         "status": "FAILED",
         "created_paths": [],
+        "cleaned_paths": [],
         "errors": [],
     }
 
@@ -76,7 +107,7 @@ def install_ultra_skill(target_dir: Path, force: bool = False, as_global: bool =
     try:
         # 1. Arrange .agents/skills/ultra-skill/ (Self-contained skill bundle)
         skills_dir.mkdir(parents=True, exist_ok=True)
-        
+
         # Copy SKILL.md
         src_skill = SOURCE_ROOT / "skills" / "ultra-skill" / "SKILL.md"
         if not src_skill.exists():
@@ -97,6 +128,8 @@ def install_ultra_skill(target_dir: Path, force: bool = False, as_global: bool =
         # 2. Arrange .agents/agents/ (Top-level subagent personas for direct discovery)
         agents_dir.mkdir(parents=True, exist_ok=True)
         src_agents = SOURCE_ROOT / "agents"
+        if not src_agents.exists():
+            src_agents = SOURCE_ROOT / "skills" / "ultra-skill" / "agents"
         if src_agents.exists():
             copy_directory(src_agents, agents_dir)
             result["created_paths"].append(str(agents_dir))
@@ -105,7 +138,10 @@ def install_ultra_skill(target_dir: Path, force: bool = False, as_global: bool =
         rules_dir.mkdir(parents=True, exist_ok=True)
         src_agents_md = SOURCE_ROOT / "AGENTS.md"
         if src_agents_md.exists():
-            shutil.copy2(src_agents_md, rules_dir / "AGENTS.md")
+            content = src_agents_md.read_text(encoding="utf-8")
+            if not as_global:
+                content = adapt_workspace_entrypoints(content)
+            (rules_dir / "AGENTS.md").write_text(content, encoding="utf-8")
             result["created_paths"].append(str(rules_dir / "AGENTS.md"))
 
         # 4. Project root entrypoints (only for workspace installs)
@@ -114,9 +150,20 @@ def install_ultra_skill(target_dir: Path, force: bool = False, as_global: bool =
                 src_file = SOURCE_ROOT / root_file
                 dst_file = target_dir / root_file
                 if src_file.exists():
-                    copied = copy_file(src_file, dst_file, force=force)
-                    if copied:
-                        result["created_paths"].append(str(dst_file))
+                    if dst_file.exists() and not force:
+                        continue
+                    if root_file.endswith(".md"):
+                        content = src_file.read_text(encoding="utf-8")
+                        content = adapt_workspace_entrypoints(content)
+                        dst_file.write_text(content, encoding="utf-8")
+                    else:
+                        shutil.copy2(src_file, dst_file)
+                    result["created_paths"].append(str(dst_file))
+
+        # 5. Clean up loose root folders if requested
+        if clean_root and not as_global:
+            cleaned = clean_loose_root_folders(target_dir)
+            result["cleaned_paths"] = cleaned
 
         result["status"] = "SUCCESS"
 
@@ -134,12 +181,13 @@ def main():
     parser.add_argument("target_dir", nargs="?", default=".", help="Target project root directory (default: current directory)")
     parser.add_argument("--force", action="store_true", help="Overwrite existing files in target directory")
     parser.add_argument("--global", dest="as_global", action="store_true", help="Install into global config root (e.g. ~/.gemini/config or ~/.agents)")
+    parser.add_argument("--clean-root", action="store_true", help="Remove redundant loose root folders (skills, agents, workflows, scripts) from target project")
     parser.add_argument("--json", action="store_true", help="Output results in JSON format")
 
     args = parser.parse_args()
     target_path = Path(args.target_dir).resolve()
 
-    res = install_ultra_skill(target_path, force=args.force, as_global=args.as_global)
+    res = install_ultra_skill(target_path, force=args.force, as_global=args.as_global, clean_root=args.clean_root)
 
     if args.json:
         print(json.dumps(res, indent=2))
@@ -150,10 +198,14 @@ def main():
             print(f"  ├── .agents/skills/ultra-skill/ (SKILL.md, agents/, workflows/, scripts/, references/)")
             print(f"  ├── .agents/agents/            (10 subagent personas)")
             print(f"  ├── .agents/rules/             (AGENTS.md)")
-            print(f"  ├── AGENTS.md                  (Universal agent behaviors)")
+            print(f"  ├── AGENTS.md                  (Universal agent behaviors -> .agents/skills/ultra-skill/SKILL.md)")
             print(f"  ├── CLAUDE.md                  (Claude Code entrypoint)")
             print(f"  ├── GEMINI.md                  (Gemini CLI / Antigravity entrypoint)")
             print(f"  └── .slopignore                (Anti-slop whitelist)")
+            if res.get("cleaned_paths"):
+                print(f"\n🧹 Cleaned loose root folders:")
+                for p in res["cleaned_paths"]:
+                    print(f"  - {p}")
         else:
             print(f"❌ Installation failed:", file=sys.stderr)
             for err in res["errors"]:

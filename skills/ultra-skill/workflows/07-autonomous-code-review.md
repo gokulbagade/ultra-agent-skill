@@ -58,7 +58,7 @@ Re-run the review on the updated diff and output a structured report:
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
-- **Investigation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
-- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md)
+- **Investigation:** [Workflow 05: Systematic Root Cause Debugging](05-systematic-root-cause-debugging.md)
+- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

@@ -1,6 +1,6 @@
 # GEMINI.md — Google Antigravity & Gemini CLI Integration Guide
 
-> **Directive:** When interacting with this project in Google Antigravity IDE or Gemini CLI, follow the 6-phase state machine defined in [AGENTS.md](file:///d:/Agent%20SKILLS/ultra-skill/AGENTS.md) and execute via [skills/ultra-skill/SKILL.md](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md).
+> **Directive:** When interacting with this project in Google Antigravity IDE or Gemini CLI, follow the 6-phase state machine defined in [AGENTS.md](AGENTS.md) and execute via [skills/ultra-skill/SKILL.md](skills/ultra-skill/SKILL.md).
 
 ---
 

@@ -2,10 +2,10 @@
 
 > **One skill to rule them all.** Unifying 11 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, resilient error recovery, deep reference archives, and ironclad verification gates.
 
-[![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](file:///d:/Agent%20SKILLS/ultra-skill/LICENSE)
-[![Platforms](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Windsurf-orange.svg)](file:///d:/Agent%20SKILLS/ultra-skill)
-[![Architecture](https://img.shields.io/badge/architecture-Autonomous%20State%20Machine-purple.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
+[![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](skills/ultra-skill/SKILL.md)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platforms](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Windsurf-orange.svg)](.)
+[![Architecture](https://img.shields.io/badge/architecture-Autonomous%20State%20Machine-purple.svg)](skills/ultra-skill/SKILL.md)
 
 ---
 
@@ -112,55 +112,55 @@ When operating on complex tasks, Ultra Skill dispatches or role-plays dedicated 
 
 | Subagent Role | Focus Area | Superpower & Responsibility | Specification |
 | :--- | :--- | :--- | :--- |
-| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk mitigation & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
-| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
-| **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
-| **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, stdlib first, shortest diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
-| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography & color locks. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
-| **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
-| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, boundary logs, 3-fix circuit breaker. | [debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md) |
-| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; no production code without failing tests. | [tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md) |
-| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, severity triage (Critical → Info). | [reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md) |
-| **`@verifier`** | Gatekeeper Verification | 5-step gate function, command execution verification, exit code 0 assertion. | [verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md) |
+| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk mitigation & interactive progress checklists (`- [ ]`). | [planner.md](agents/planner.md) |
+| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](agents/architect.md) |
+| **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](agents/visualizer.md) |
+| **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, stdlib first, shortest diff wins. | [engineer.md](agents/engineer.md) |
+| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography & color locks. | [designer.md](agents/designer.md) |
+| **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](agents/animator.md) |
+| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, boundary logs, 3-fix circuit breaker. | [debugger.md](agents/debugger.md) |
+| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; no production code without failing tests. | [tester.md](agents/tester.md) |
+| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, severity triage (Critical → Info). | [reviewer.md](agents/reviewer.md) |
+| **`@verifier`** | Gatekeeper Verification | 5-step gate function, command execution verification, exit code 0 assertion. | [verifier.md](agents/verifier.md) |
 
 ---
 
 ## 📋 Actionable Workflows Map
 
-Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20SKILLS/ultra-skill/workflows):
+Standardized step-by-step procedures located in [workflows/](workflows):
 
-1. [01: ADK 2.0 Graph & Multi-Agent Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md) — Production graph workflows, dynamic loops, and HITL
-2. [02: Subagent-Driven Development & Parallel Dispatch](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
-3. [03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
-4. [04: Cinematic Motion Choreography & Animation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
-5. [05: Systematic Root-Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
-6. [06: Test-Driven Development (TDD)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md) — Red-Green-Refactor pipeline
-7. [07: Autonomous Code Review & Security Audit](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md) — Automated security scan & severity-based triage
-8. [08: Design DNA Extraction & Style Transfer](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
-9. [09: Brand Asset Production (UI/UX Pro Max)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md) — Logos, banners, slides, and 3-tier tokens
-10. [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
-11. [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
-12. [12: Implementation Planning & Progress Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
-13. [13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retries, circuit breaker tripping & atomic workspace rollback
-14. [14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame rate budgets
-15. [15: Skill Implementation & Proper .agents Folder Arrangement](file:///d:/Agent%20SKILLS/ultra-skill/workflows/15-skill-implementation-and-installation.md) — Automated installer & standardized .agents directory layout
+1. [01: ADK 2.0 Graph & Multi-Agent Orchestration](workflows/01-agent-graph-orchestration.md) — Production graph workflows, dynamic loops, and HITL
+2. [02: Subagent-Driven Development & Parallel Dispatch](workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
+3. [03: Anti-Slop Frontend Design](workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
+4. [04: Cinematic Motion Choreography & Animation](workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
+5. [05: Systematic Root-Cause Debugging](workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
+6. [06: Test-Driven Development (TDD)](workflows/06-test-driven-development.md) — Red-Green-Refactor pipeline
+7. [07: Autonomous Code Review & Security Audit](workflows/07-autonomous-code-review.md) — Automated security scan & severity-based triage
+8. [08: Design DNA Extraction & Style Transfer](workflows/08-design-dna-extraction.md) — Style quantization from URLs/images into CSS tokens
+9. [09: Brand Asset Production (UI/UX Pro Max)](workflows/09-brand-asset-production.md) — Logos, banners, slides, and 3-tier tokens
+10. [10: Gate-Function Verification Before Completion](workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
+11. [11: Interactive Architecture Visualization (Archify)](workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
+12. [12: Implementation Planning & Progress Checklists](workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
+13. [13: Error Recovery & Graceful Degradation](workflows/13-error-recovery-and-graceful-degradation.md) — Transient retries, circuit breaker tripping & atomic workspace rollback
+14. [14: Performance Profiling & Optimization](workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame rate budgets
+15. [15: Skill Implementation & Proper .agents Folder Arrangement](workflows/15-skill-implementation-and-installation.md) — Automated installer & standardized .agents directory layout
 
 ---
 
 ## 📚 Deep Reference Archives
 
-Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-skill/references/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references):
+Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-skill/references/](skills/ultra-skill/references):
 
-- **[references/archify/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/archify)** — Archify CLI engine (`bin/archify.mjs`), 5 diagram schemas, recipes, brand marks.
-- **[references/adk/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/adk)** — 11 packages: agent builder, architecture, debug, git, review, sample creator, setup, style, unit design, unit guide, verify snippets.
-- **[references/superpowers/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/superpowers)** — Subagent-driven dev, parallel dispatch, systematic debugging, TDD, verification gates, writing plans.
-- **[references/taste/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/taste)** — Anti-slop guidelines, brandkit, minimalist, brutalist, soft design, redesign skill, image-to-code.
-- **[references/ponytail/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ponytail)** — Lazy developer ladder, code audit, technical debt elimination, review rules.
-- **[references/gsap/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/gsap)** — Core API, timelines, ScrollTrigger, performance tuning, React/framework integration, utility helpers.
-- **[references/motion-design/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/motion-design)** — Motion director guide, choreography, Disney principles, emotion mapping, timing tables.
-- **[references/design-dna/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/design-dna)** — 3D schema, generation guide, color math, verification scripts.
-- **[references/ui-ux-pro-max/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/ui-ux-pro-max)** — 55+ logo styles, 22 banner formats, corporate identity templates, design tokens.
-- **[references/coderabbit/](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/references/coderabbit)** — Code review rules, CLI workflows, autonomous autofix loop, security audit rubrics.
+- **[references/archify/](skills/ultra-skill/references/archify)** — Archify CLI engine (`bin/archify.mjs`), 5 diagram schemas, recipes, brand marks.
+- **[references/adk/](skills/ultra-skill/references/adk)** — 11 packages: agent builder, architecture, debug, git, review, sample creator, setup, style, unit design, unit guide, verify snippets.
+- **[references/superpowers/](skills/ultra-skill/references/superpowers)** — Subagent-driven dev, parallel dispatch, systematic debugging, TDD, verification gates, writing plans.
+- **[references/taste/](skills/ultra-skill/references/taste)** — Anti-slop guidelines, brandkit, minimalist, brutalist, soft design, redesign skill, image-to-code.
+- **[references/ponytail/](skills/ultra-skill/references/ponytail)** — Lazy developer ladder, code audit, technical debt elimination, review rules.
+- **[references/gsap/](skills/ultra-skill/references/gsap)** — Core API, timelines, ScrollTrigger, performance tuning, React/framework integration, utility helpers.
+- **[references/motion-design/](skills/ultra-skill/references/motion-design)** — Motion director guide, choreography, Disney principles, emotion mapping, timing tables.
+- **[references/design-dna/](skills/ultra-skill/references/design-dna)** — 3D schema, generation guide, color math, verification scripts.
+- **[references/ui-ux-pro-max/](skills/ultra-skill/references/ui-ux-pro-max)** — 55+ logo styles, 22 banner formats, corporate identity templates, design tokens.
+- **[references/coderabbit/](skills/ultra-skill/references/coderabbit)** — Code review rules, CLI workflows, autonomous autofix loop, security audit rubrics.
 
 ---
 
@@ -318,7 +318,7 @@ Ultra Skill completely eliminates generic AI slop from web apps and landing page
 
 ## 🛠️ Automation & Verification Utilities
 
-Ultra Skill includes automated diagnostic and verification tools in [scripts/](file:///d:/Agent%20SKILLS/ultra-skill/scripts):
+Ultra Skill includes automated diagnostic and verification tools in [scripts/](scripts):
 
 - **Gate Verification Runner (`scripts/verify_evidence.py`):**
   Runs any test or build command, captures stdout/stderr, verifies exit code `0`, and prints a structured pass/fail verdict or machine-parseable JSON receipt. Supports saving receipts to `.verification/` and custom timeouts.
@@ -470,7 +470,7 @@ python scripts/install_skill.py --global
 ```bash
 # Windows PowerShell
 New-Item -ItemType Directory -Force -Path "$HOME\.agents\skills"
-Copy-Item -Recurse -Force "d:\Agent SKILLS\ultra-skill\skills\ultra-skill" "$HOME\.agents\skills\ultra-skill"
+Copy-Item -Recurse -Force "skills/ultra-skill" "$HOME\.agents\skills\ultra-skill"
 ```
 ```bash
 # macOS / Linux
@@ -639,7 +639,7 @@ node skills/ultra-skill/references/archify/bin/archify.mjs finalize \
 
 ## 📄 License & Sources
 
-Released under the [MIT License](file:///d:/Agent%20SKILLS/ultra-skill/README.md).
+Released under the [MIT License](README.md).
 
 ### Upstream Sources & Credits
 - **Archify:** [`tt-a1i/archify`](https://github.com/tt-a1i/archify)

@@ -85,7 +85,7 @@ mm.add({
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
-- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md)
-- **Visual QA:** [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite:** [Workflow 03: Anti-Slop Frontend Design](03-anti-slop-frontend-design.md)
+- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](14-performance-profiling-and-optimization.md)
+- **Visual QA:** [Workflow 08: Design DNA Extraction](08-design-dna-extraction.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

@@ -68,7 +68,7 @@ Generate clean, standardized CSS custom properties:
 ---
 
 ## 🔗 Related Workflows
-- **Downstream Design:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
-- **Asset Production:** [Workflow 09: Brand Asset Production](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
-- **Motion Design:** [Workflow 04: Cinematic Motion Choreography](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Downstream Design:** [Workflow 03: Anti-Slop Frontend Design](03-anti-slop-frontend-design.md)
+- **Asset Production:** [Workflow 09: Brand Asset Production](09-brand-asset-production.md)
+- **Motion Design:** [Workflow 04: Cinematic Motion Choreography](04-cinematic-motion-choreography.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

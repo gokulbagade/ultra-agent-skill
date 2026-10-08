@@ -82,8 +82,8 @@ Run full project test suite, linter, and build verification command (`python scr
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
-- **Downstream:** [Workflow 06: Test-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
-- **Downstream:** [Workflow 07: Autonomous Code Review](file:///d:/Agent%20SKILLS/ultra-skill/workflows/07-autonomous-code-review.md)
-- **Failure Handling:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](12-implementation-planning-and-checklists.md)
+- **Downstream:** [Workflow 06: Test-Driven Development](06-test-driven-development.md)
+- **Downstream:** [Workflow 07: Autonomous Code Review](07-autonomous-code-review.md)
+- **Failure Handling:** [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

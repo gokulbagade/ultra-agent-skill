@@ -52,7 +52,7 @@ graph TD
 4. 🛑 **The 3-Fix Circuit Breaker:**
    - If three fix attempts fail, **HALT IMMEDIATELY**.
    - Do not make a fourth attempt.
-   - Stop, document findings, and invoke [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md).
+   - Stop, document findings, and invoke [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md).
 
 ---
 
@@ -64,7 +64,7 @@ graph TD
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite / Trigger:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
-- **Test Enforcement:** [Workflow 06: Test-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
-- **Failure Escalation:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite / Trigger:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md)
+- **Test Enforcement:** [Workflow 06: Test-Driven Development](06-test-driven-development.md)
+- **Failure Escalation:** [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

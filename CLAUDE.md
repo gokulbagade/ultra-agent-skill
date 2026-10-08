@@ -1,6 +1,6 @@
 # CLAUDE.md — Claude Code Integration Guide
 
-> **Directive:** When interacting with this project in Claude Code, read and follow [AGENTS.md](file:///d:/Agent%20SKILLS/ultra-skill/AGENTS.md) and [skills/ultra-skill/SKILL.md](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md).
+> **Directive:** When interacting with this project in Claude Code, read and follow [AGENTS.md](AGENTS.md) and [skills/ultra-skill/SKILL.md](skills/ultra-skill/SKILL.md).
 
 ---
 

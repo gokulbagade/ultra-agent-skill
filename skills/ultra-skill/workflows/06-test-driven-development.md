@@ -65,7 +65,7 @@ graph TD
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
-- **Subagent Execution:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
-- **Bug Remediation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](12-implementation-planning-and-checklists.md)
+- **Subagent Execution:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md)
+- **Bug Remediation:** [Workflow 05: Systematic Root Cause Debugging](05-systematic-root-cause-debugging.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

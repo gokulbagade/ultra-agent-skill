@@ -69,7 +69,7 @@ Execute an automated audit against Google Core Web Vitals targets:
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
-- **Motion Optimization:** [Workflow 04: Cinematic Motion Choreography](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
-- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
+- **Prerequisite:** [Workflow 03: Anti-Slop Frontend Design](03-anti-slop-frontend-design.md)
+- **Motion Optimization:** [Workflow 04: Cinematic Motion Choreography](04-cinematic-motion-choreography.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)
+- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)

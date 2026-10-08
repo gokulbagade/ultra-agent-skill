@@ -99,8 +99,8 @@ When initiating a plan, output the following structured format:
 ---
 
 ## 🔗 Related Workflows
-- **Downstream Execution:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
-- **TDD Implementation:** [Workflow 06: Test-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
-- **Architecture Visualization:** [Workflow 11: Interactive Architecture Visualization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md)
-- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
-- **Final Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Downstream Execution:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md)
+- **TDD Implementation:** [Workflow 06: Test-Driven Development](06-test-driven-development.md)
+- **Architecture Visualization:** [Workflow 11: Interactive Architecture Visualization](11-interactive-architecture-visualization.md)
+- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](13-error-recovery-and-graceful-degradation.md)
+- **Final Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

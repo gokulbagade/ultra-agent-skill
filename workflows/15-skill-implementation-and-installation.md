@@ -101,6 +101,6 @@ python .agents/skills/ultra-skill/scripts/verify_evidence.py "python .agents/ski
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite / Routing:** [Workflow 01: Agent Graph Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md)
-- **Subagent Dev:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
-- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
+- **Prerequisite / Routing:** [Workflow 01: Agent Graph Orchestration](01-agent-graph-orchestration.md)
+- **Subagent Dev:** [Workflow 02: Subagent-Driven Development](02-subagent-driven-development.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)

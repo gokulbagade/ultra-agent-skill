@@ -85,7 +85,7 @@ If automated recovery fails:
 ---
 
 ## 🔗 Related Workflows
-- **Prerequisite:** [Workflow 01: Agent Graph Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md)
-- **Investigation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
-- **Verification:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)
-- **Planning:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
+- **Prerequisite:** [Workflow 01: Agent Graph Orchestration](01-agent-graph-orchestration.md)
+- **Investigation:** [Workflow 05: Systematic Root Cause Debugging](05-systematic-root-cause-debugging.md)
+- **Verification:** [Workflow 10: Gate-Function Verification](10-gate-function-verification.md)
+- **Planning:** [Workflow 12: Implementation Planning & Checklists](12-implementation-planning-and-checklists.md)
