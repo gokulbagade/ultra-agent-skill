@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- Core brand archetype, industry vertical, and brand narrative established.
+- Target marketing or platform channels identified (Social, Web, Pitch Deck, Mobile).
+- Palette and aesthetic guidelines from [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -55,3 +62,11 @@ Structure tokens hierarchically:
 - Use semantic HTML with responsive flex/grid layouts.
 - Integrate Chart.js via CDN for responsive data visualizations.
 - Ensure all chart colors use semantic design tokens.
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
+- **Frontend Integration:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
+- **Architecture Mockups:** [Workflow 11: Interactive Architecture Visualization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

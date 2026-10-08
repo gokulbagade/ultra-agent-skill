@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- Node.js runtime installed.
+- System description, codebase structure, or Mermaid diagram source available.
+- Reference CLI script available (`skills/ultra-skill/references/archify/bin/archify.mjs`).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -56,3 +63,11 @@ node skills/ultra-skill/references/archify/bin/archify.mjs finalize <type> <cand
   - Pan & zoom controls
   - Interactive click-to-highlight node connectivity
   - Export to SVG, PNG, WebP, and WebM
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite / Topology:** [Workflow 01: Agent Graph Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md)
+- **Asset Production:** [Workflow 09: Brand Asset Production](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
+- **Planning:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

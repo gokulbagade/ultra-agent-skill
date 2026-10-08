@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- Python 3.10+ runtime and Google ADK package installed (`google-adk` or `google-genai`).
+- API keys configured in local environment (`.env`).
+- High-level technical architecture and input/output contracts defined (`workflows/12-implementation-planning-and-checklists.md`).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -100,3 +107,12 @@ pytest tests/test_agent.py
 ### Step 7: Verification Gate
 - Assert zero tool failure exceptions.
 - Verify state persistence across session turns.
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
+- **Subagent Execution:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
+- **Trace Inspection:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
+- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

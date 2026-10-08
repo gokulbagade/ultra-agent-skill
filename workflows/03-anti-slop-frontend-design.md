@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- Clear target audience and user intent declared.
+- Project design tokens or aesthetic style targets established (`workflows/08-design-dna-extraction.md`).
+- Automated slop auditing script configured (`scripts/detect_ai_slop.py`).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -58,13 +65,20 @@ Explicitly calibrate:
 
 ### Step 6: Interactive States & Contrast
 - Implement Loading (skeletal), Empty, Error, and Tactile hover/active feedback.
-- Every button must satisfy WCAG AA contrast (4.5:1).
+- Every button must satisfy WCAG AA contrast (4.5:1 via `scripts/contrast_checker.py`).
 - Button text must fit on one line at desktop (no wrapping).
 
 ### Step 7: Anti-Slop Self-Audit
-Verify that the output contains:
-- No Inter font default
-- No purple glow cards
-- No three identical equal-width cards
-- No white-on-white CTAs
-- Responsive viewport heights (`100dvh`, never `h-screen`)
+Verify that the output passes automated checks:
+- Run `python scripts/detect_ai_slop.py --strict`
+- Run `python scripts/contrast_checker.py`
+- Confirm: No Inter font default, no purple glow cards, no three identical equal-width cards, no white-on-white CTAs, responsive viewport heights (`100dvh`, never `h-screen`).
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
+- **Asset Generation:** [Workflow 09: Brand Asset Production](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
+- **Motion Integration:** [Workflow 04: Cinematic Motion Choreography](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
+- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

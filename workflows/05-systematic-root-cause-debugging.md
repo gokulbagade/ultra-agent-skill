@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- A documented error trace, failing test output, or unexpected defect description.
+- Access to the target codebase and terminal execution environment.
+- Clean git status or checkpoint snapshot to revert experimental logging.
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -45,7 +52,7 @@ graph TD
 4. 🛑 **The 3-Fix Circuit Breaker:**
    - If three fix attempts fail, **HALT IMMEDIATELY**.
    - Do not make a fourth attempt.
-   - Stop, document findings, and discuss the architectural assumptions with the user.
+   - Stop, document findings, and invoke [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md).
 
 ---
 
@@ -53,3 +60,11 @@ graph TD
 - ❌ *"Let's try changing X and see what happens"* → BANNED.
 - ❌ Fixing symptoms by wrapping with try/except or adding null checks without understanding why the value is null.
 - ❌ Proposing solutions before establishing reproducible evidence.
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite / Trigger:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
+- **Test Enforcement:** [Workflow 06: Test-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/06-test-driven-development.md)
+- **Failure Escalation:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

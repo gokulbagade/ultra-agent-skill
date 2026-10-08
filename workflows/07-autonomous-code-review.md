@@ -1,6 +1,13 @@
 # 🐇 Agentic Workflow 07: Autonomous Code Review & Security Audit
 
-> **Purpose:** Run comprehensive, severity-ranked code reviews to catch bugs, performance bottlenecks, and security vulnerabilities before merging.
+> **Purpose:** Run comprehensive, severity-ranked code reviews to catch bugs, performance bottlenecks, dependency CVEs, and security vulnerabilities before merging.
+
+---
+
+## 📋 Prerequisites
+- Unified git diff available (`git diff` or PR branch).
+- Passing unit test suite from `@tester`.
+- Dependency manifests (`package.json`, `requirements.txt`, etc.) accessible.
 
 ---
 
@@ -47,3 +54,11 @@ Re-run the review on the updated diff and output a structured report:
 - **Minor Issues:** 2 (Non-blocking)
 - **Status:** APPROVED / READY FOR MERGE
 ```
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
+- **Investigation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
+- **Error Recovery:** [Workflow 13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

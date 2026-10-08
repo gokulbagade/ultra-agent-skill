@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- A target reference design asset (high-resolution PNG/JPG, Figma mockup, or public URL).
+- Browser inspection tools or image analysis capabilities.
+- Target frontend stack identified (HTML/CSS, Tailwind, Next.js, Vite).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -55,4 +62,13 @@ Generate clean, standardized CSS custom properties:
 
 ### Step 4: Token Application & Verification
 - Apply the generated CSS tokens to semantic HTML structure.
-- Verify WCAG contrast compliance for all text against backgrounds.
+- Verify WCAG contrast compliance for all text against backgrounds using `python scripts/contrast_checker.py`.
+- Audit design against slop rules using `python scripts/detect_ai_slop.py`.
+
+---
+
+## 🔗 Related Workflows
+- **Downstream Design:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
+- **Asset Production:** [Workflow 09: Brand Asset Production](file:///d:/Agent%20SKILLS/ultra-skill/workflows/09-brand-asset-production.md)
+- **Motion Design:** [Workflow 04: Cinematic Motion Choreography](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

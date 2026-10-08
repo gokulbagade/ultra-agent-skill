@@ -1,9 +1,9 @@
-# ⚡ Ultra Skill v3.1 — The Autonomous AI Powerhouse
+# ⚡ Ultra Skill v4.0 — The Autonomous AI Powerhouse
 
-> **One skill to rule them all.** Unifying 11 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, deep reference archives, and ironclad verification gates.
+> **One skill to rule them all.** Unifying 11 elite AI agent systems into an orchestrated, self-routing agentic powerhouse with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, resilient error recovery, deep reference archives, and ironclad verification gates.
 
-[![Version](https://img.shields.io/badge/version-3.1.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](file:///d:/Agent%20SKILLS/ultra-skill/README.md)
+[![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](file:///d:/Agent%20SKILLS/ultra-skill/LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Windsurf-orange.svg)](file:///d:/Agent%20SKILLS/ultra-skill)
 [![Architecture](https://img.shields.io/badge/architecture-Autonomous%20State%20Machine-purple.svg)](file:///d:/Agent%20SKILLS/ultra-skill/skills/ultra-skill/SKILL.md)
 
@@ -16,7 +16,7 @@
 - [Specialized Subagent Roles & Personas](#-specialized-subagent-roles--personas)
 - [Actionable Workflows Map](#-actionable-workflows-map)
 - [Deep Reference Archives](#-deep-reference-archives)
-- [The 11 Unified Modules Matrix](#-the-11-unified-modules-matrix)
+- [The 13 Unified Modules Matrix](#-the-13-unified-modules-matrix)
 - [Slash Command Routing Table](#-slash-command-routing-table)
 - [Core Feature Deep Dive](#-core-feature-deep-dive)
   - [1. AI Agent & Graph Workflow Engineering (ADK 2.0)](#1-ai-agent--graph-workflow-engineering-adk-20)
@@ -130,7 +130,7 @@ When operating on complex tasks, Ultra Skill dispatches or role-plays dedicated 
 Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20SKILLS/ultra-skill/workflows):
 
 1. [01: ADK 2.0 Graph & Multi-Agent Orchestration](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md) — Production graph workflows, dynamic loops, and HITL
-2. [02: Subagent-Driven Development & Parallel Dispatch](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition & implementer/reviewer dispatch
+2. [02: Subagent-Driven Development & Parallel Dispatch](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
 3. [03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
 4. [04: Cinematic Motion Choreography & Animation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
 5. [05: Systematic Root-Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
@@ -141,6 +141,8 @@ Standardized step-by-step procedures located in [workflows/](file:///d:/Agent%20
 10. [10: Gate-Function Verification Before Completion](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
 11. [11: Interactive Architecture Visualization (Archify)](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
 12. [12: Implementation Planning & Progress Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
+13. [13: Error Recovery & Graceful Degradation](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retries, circuit breaker tripping & atomic workspace rollback
+14. [14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame rate budgets
 
 ---
 
@@ -161,7 +163,7 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 
 ---
 
-## 🧩 The 11 Unified Modules Matrix
+## 🧩 The 13 Unified Modules Matrix
 
 | Module / Skill | Provenance / Upstream | Primary Superpower & Contribution |
 | :--- | :--- | :--- |
@@ -176,6 +178,8 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 | **§9 UI/UX Pro Max** | [`nextlevelbuilder/ui-ux-pro-max-skill`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **Brand & Production Assets:** 55+ logo styles, CIP for 20 industries, social banners, 3-tier token architecture. |
 | **§10 Code Review** | [`coderabbitai/skills`](https://github.com/coderabbitai/skills) | **Autonomous Review & Triage:** Severity-rated findings (Critical → Info), secret hygiene, automated review loop. |
 | **§11 Implementation Planning** | [`obra/superpowers`](https://github.com/obra/superpowers) | **Zero-Context Engineering Plans:** Exact file paths, precise method signatures, atomic TDD task steps. |
+| **§12 Performance Guardrails** | [`greensock/gsap-skills`](https://github.com/greensock/gsap-skills) | **Performance Engineering:** Hardware transforms only, 60fps budgets, `prefers-reduced-motion`, Core Web Vitals (LCP < 2.5s, INP < 200ms, CLS < 0.1). |
+| **§13 Accessibility Checklist** | [`obra/superpowers`](https://github.com/obra/superpowers) | **Inclusive Web Quality:** WCAG AA/AAA contrast ratios, focus styles, keyboard navigation, reduced-motion fallbacks, semantic markup. |
 | **§14-17 Google ADK 2.0** | [`google/adk-python`](https://github.com/google/adk-python) | **Enterprise Agent & Graph Workflows:** Directed graph scheduling, fan-out/fan-in, dynamic nodes, HITL, headless diagnostics. |
 | **§18 Archify** | [`tt-a1i/archify`](https://github.com/tt-a1i/archify) | **Interactive Architecture Visualization:** 5 diagram modes, Mermaid conversion, standalone HTML with SVG & trace motion. |
 
@@ -195,6 +199,8 @@ Comprehensive manuals, patterns, and design catalogs bundled in [skills/ultra-sk
 | `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
 | `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
+| `/recover` | `@architect`, `@debugger` | Workflow 13 (Error Recovery & Rollback) + §6 Debugging |
+| `/perf` | `@animator`, `@engineer` | Workflow 14 (Performance Profiling) + §12 Performance Guardrails |
 
 ---
 
@@ -313,19 +319,30 @@ Ultra Skill completely eliminates generic AI slop from web apps and landing page
 Ultra Skill includes automated diagnostic and verification tools in [scripts/](file:///d:/Agent%20SKILLS/ultra-skill/scripts):
 
 - **Gate Verification Runner (`scripts/verify_evidence.py`):**
-  Runs any test or build command, captures full stdout/stderr, verifies exit code `0`, and prints a structured pass/fail verdict.
+  Runs any test or build command, captures stdout/stderr, verifies exit code `0`, and prints a structured pass/fail verdict or machine-parseable JSON receipt. Supports saving receipts to `.verification/` and custom timeouts.
   ```bash
-  python scripts/verify_evidence.py "pytest tests/"
+  python scripts/verify_evidence.py --json --save .verification/receipt.json "pytest tests/"
   ```
-- **AI Slop Detector (`scripts/detect_ai_slop.py`):**
-  Audits HTML, CSS, JSX, and TSX files for generic AI design tropes (Inter font defaults, purple gradients, `h-screen` bugs, fake browser divs).
+- **AI Slop Detector & Fixer (`scripts/detect_ai_slop.py`):**
+  Audits HTML, CSS, JSX, and TSX files for generic AI design tropes (Inter font defaults, purple gradients, `h-screen` viewport bugs, fake browser divs, lorem ipsum copy, white-on-white CTAs, generic serifs, three-card triplets). Supports `--fix` recommendations, `--json`, and `.slopignore`.
   ```bash
-  python scripts/detect_ai_slop.py ./src
+  python scripts/detect_ai_slop.py ./src --fix --min-severity WARNING
+  ```
+- **WCAG Contrast Checker (`scripts/contrast_checker.py`):**
+  Automated relative luminance and contrast ratio calculator supporting direct color evaluation (hex/rgb/named) and batch scanning of CSS/HTML/Tailwind files against WCAG AA (4.5:1 / 3:1) and AAA (7:1) criteria.
+  ```bash
+  python scripts/contrast_checker.py "#ffffff" "#0f172a" --json
+  python scripts/contrast_checker.py ./src
+  ```
+- **Implementation Plan Validator (`scripts/plan_validator.py`):**
+  Validates implementation plan markdown against §11 schema requirements (Goal, Architecture, Tech Stack, Affected Files, Master Checklist), enforces `- [ ]` syntax, checks file existence on disk, and warns if task count exceeds 20.
+  ```bash
+  python scripts/plan_validator.py plan.md --workspace . --json
   ```
 - **ADK Trace Inspector (`scripts/adk_trace_inspector.py`):**
-  Parses JSONL event streams from `adk run --jsonl`, extracts tool calls, verifies schema fidelity, and flags execution errors.
+  Parses JSONL event streams from `adk run --jsonl`, extracts tool calls, verifies schema fidelity, tracks tool latency (warning on >5s), estimates token usage, and supports `--filter-tool` filtering.
   ```bash
-  adk run --jsonl my_agent "Query" | python scripts/adk_trace_inspector.py
+  adk run --jsonl my_agent "Query" | python scripts/adk_trace_inspector.py --filter-tool query_knowledge_base
   ```
 - **Archify Finalizer CLI:**
   Validates candidate diagram JSON and compiles interactive standalone HTML.
@@ -367,11 +384,23 @@ ultra-skill/
 │   ├── 09-brand-asset-production.md
 │   ├── 10-gate-function-verification.md
 │   ├── 11-interactive-architecture-visualization.md
-│   └── 12-implementation-planning-and-checklists.md
+│   ├── 12-implementation-planning-and-checklists.md
+│   ├── 13-error-recovery-and-graceful-degradation.md
+│   └── 14-performance-profiling-and-optimization.md
 ├── scripts/                   # Automated quality and verification tools
-│   ├── verify_evidence.py     # Gate-function test & build verifier
-│   ├── detect_ai_slop.py      # Frontend AI design anti-slop linter
-│   └── adk_trace_inspector.py # Headless ADK JSONL trace triage
+│   ├── verify_evidence.py     # Gate-function test & build verifier (JSON + save)
+│   ├── detect_ai_slop.py      # Frontend AI design anti-slop auditor & fixer
+│   ├── contrast_checker.py    # Automated WCAG AA/AAA contrast ratio auditor
+│   ├── plan_validator.py      # Implementation plan §11 schema validator
+│   └── adk_trace_inspector.py # Headless ADK JSONL trace & latency triage
+├── tests/                     # Unit test suites for scripts
+│   ├── test_detect_ai_slop.py
+│   ├── test_verify_evidence.py
+│   ├── test_contrast_checker.py
+│   ├── test_plan_validator.py
+│   └── test_adk_trace_inspector.py
+├── CHANGELOG.md               # Version history and migration notes
+├── LICENSE                    # MIT License
 └── skills/
     └── ultra-skill/
         ├── SKILL.md           # Master skill definition & full instruction manual

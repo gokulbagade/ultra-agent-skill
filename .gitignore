@@ -2,12 +2,16 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pytest_cache/
+.coverage
+coverage/
 
 # C extensions
 *.so
 
 # Environments
 .env
+.env.local
 .venv
 env/
 venv/
@@ -26,3 +30,14 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Build & Dependencies
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+
+# Ultra Skill runtime & receipt directories
+.archify/
+.verification/

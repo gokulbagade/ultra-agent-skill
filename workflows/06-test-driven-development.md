@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- A test framework installed and configured (`pytest`, `vitest`, `jest`, `cargo test`, etc.).
+- Concrete behavioral requirement or acceptance criteria from `@planner`.
+- Target function signatures or API contracts defined.
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -54,3 +61,11 @@ graph TD
 ## ⚖️ The Iron Rules of TDD
 1. Production code written before tests must be deleted.
 2. "I will write tests after" is strictly prohibited. Tests written after implementation pass immediately and prove nothing about the test's validity.
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 12: Implementation Planning & Checklists](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md)
+- **Subagent Execution:** [Workflow 02: Subagent-Driven Development](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md)
+- **Bug Remediation:** [Workflow 05: Systematic Root Cause Debugging](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

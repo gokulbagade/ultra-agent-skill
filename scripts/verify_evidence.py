@@ -3,12 +3,15 @@
 verify_evidence.py — Automated Gate-Function Verification Runner
 Executes a verification command, checks exit code, scans for failures,
 and produces a structured verification certificate.
+Supports human-readable terminal output and machine-parseable JSON.
 """
 
 import sys
 import subprocess
 import json
 import time
+import argparse
+from pathlib import Path
 
 if sys.platform == "win32":
     try:
@@ -18,7 +21,7 @@ if sys.platform == "win32":
         pass
 
 
-def run_verification(command: str) -> dict:
+def run_verification(command: str, timeout: int = 300) -> dict:
     start_time = time.time()
     result = {
         "command": command,
@@ -37,48 +40,73 @@ def run_verification(command: str) -> dict:
             shell=True,
             capture_output=True,
             text=True,
-            timeout=300,
+            timeout=timeout,
         )
         duration = round(time.time() - start_time, 2)
         result["duration_seconds"] = duration
         result["exit_code"] = proc.returncode
         result["stdout"] = proc.stdout.strip()
         result["stderr"] = proc.stderr.strip()
-        result["passed"] = proc.returncode == 0
+        result["passed"] = (proc.returncode == 0)
 
     except subprocess.TimeoutExpired:
         result["duration_seconds"] = round(time.time() - start_time, 2)
-        result["error_message"] = "Verification command timed out after 300 seconds."
+        result["error_message"] = f"Verification command timed out after {timeout} seconds."
     except Exception as e:
         result["duration_seconds"] = round(time.time() - start_time, 2)
         result["error_message"] = str(e)
 
     return result
 
+
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python verify_evidence.py <command_to_verify>")
+    parser = argparse.ArgumentParser(
+        description="Run gate-function verification commands and produce verification receipts.",
+        usage="python verify_evidence.py [--json] [--timeout SECONDS] [--save PATH] <command ...>"
+    )
+    parser.add_argument("--json", action="store_true", help="Output machine-parseable JSON receipt")
+    parser.add_argument("--timeout", type=int, default=300, help="Command timeout in seconds (default: 300)")
+    parser.add_argument("--save", type=str, default=None, help="Save JSON verification certificate to file")
+    parser.add_argument("command", nargs=argparse.REMAINDER, help="The command line string to verify")
+
+    args = parser.parse_args()
+
+    if not args.command:
+        parser.print_help()
         sys.exit(1)
 
-    cmd = " ".join(sys.argv[1:])
-    print(f"[*] Running Gate Verification: '{cmd}'")
-    report = run_verification(cmd)
+    cmd = " ".join(args.command)
+    if not args.json:
+        print(f"[*] Running Gate Verification: '{cmd}'")
 
-    print("\n--- GATE VERIFICATION RESULT ---")
-    if report["passed"]:
-        print(f"✅ PASSED (Exit Code: {report['exit_code']}, Duration: {report['duration_seconds']}s)")
-        if report["stdout"]:
-            print(f"Output:\n{report['stdout']}")
-        sys.exit(0)
+    report = run_verification(cmd, timeout=args.timeout)
+
+    if args.save:
+        save_path = Path(args.save)
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+        save_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+        if not args.json:
+            print(f"[*] Verification receipt saved to '{save_path}'")
+
+    if args.json:
+        print(json.dumps(report, indent=2))
     else:
-        print(f"❌ FAILED (Exit Code: {report['exit_code']}, Duration: {report['duration_seconds']}s)")
-        if report["stderr"]:
-            print(f"Error:\n{report['stderr']}")
-        elif report["stdout"]:
-            print(f"Output:\n{report['stdout']}")
-        if report.get("error_message"):
-            print(f"Details: {report['error_message']}")
-        sys.exit(1)
+        print("\n--- GATE VERIFICATION RESULT ---")
+        if report["passed"]:
+            print(f"✅ PASSED (Exit Code: {report['exit_code']}, Duration: {report['duration_seconds']}s)")
+            if report["stdout"]:
+                print(f"Output:\n{report['stdout']}")
+        else:
+            print(f"❌ FAILED (Exit Code: {report['exit_code']}, Duration: {report['duration_seconds']}s)")
+            if report["stderr"]:
+                print(f"Error:\n{report['stderr']}")
+            elif report["stdout"]:
+                print(f"Output:\n{report['stdout']}")
+            if report.get("error_message"):
+                print(f"Details: {report['error_message']}")
+
+    sys.exit(0 if report["passed"] else 1)
+
 
 if __name__ == "__main__":
     main()

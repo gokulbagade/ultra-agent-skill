@@ -1,0 +1,6 @@
+# .slopignore — Ignore third-party upstream reference fixtures
+references/*
+skills/ultra-skill/references/*
+.archify/*
+dist/*
+build/*

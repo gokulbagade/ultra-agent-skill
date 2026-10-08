@@ -4,6 +4,13 @@
 
 ---
 
+## 📋 Prerequisites
+- Component layout structure established per design specs (`workflows/03-anti-slop-frontend-design.md`).
+- Animation library installed (`gsap`, `framer-motion`, or CSS keyframe modules).
+- Target frame budget defined ($\le 16.67\text{ms}$ per frame for 60fps).
+
+---
+
 ## 🧭 Workflow State Machine
 
 ```mermaid
@@ -74,3 +81,11 @@ mm.add({
 - Never use `window.addEventListener('scroll')`. Always use ScrollTrigger or Motion `whileInView`.
 - Use pinned scrub timelines for sticky stacks and horizontal pans.
 - In React/Vue/Svelte, always clean up timelines in component unmount lifecycles (`context.revert()`).
+
+---
+
+## 🔗 Related Workflows
+- **Prerequisite:** [Workflow 03: Anti-Slop Frontend Design](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md)
+- **Performance Profiling:** [Workflow 14: Performance Profiling & Optimization](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md)
+- **Visual QA:** [Workflow 08: Design DNA Extraction](file:///d:/Agent%20SKILLS/ultra-skill/workflows/08-design-dna-extraction.md)
+- **Gate Enforcement:** [Workflow 10: Gate-Function Verification](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md)

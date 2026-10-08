@@ -12,7 +12,7 @@ description: >
 argument-hint: "[task-type | slash-command] [context]"
 license: MIT
 metadata:
-  version: "3.1.0"
+  version: "4.0.0"
   architecture: "autonomous-state-machine"
   sources:
     - archify (tt-a1i/archify)
@@ -28,9 +28,9 @@ metadata:
     - adk-python (google/adk-python)
 ---
 
-# ⚡ Ultra Skill v3.1 — Autonomous Agentic Powerhouse
+# ⚡ Ultra Skill v4.0 — Autonomous Agentic Powerhouse
 
-> **One skill to rule them all.** Unifying 11 best-in-class AI agent systems into an orchestrated, self-routing agentic engine with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, and ironclad verification gates.
+> **One skill to rule them all.** Unifying 11 best-in-class AI agent systems into an orchestrated, self-routing agentic engine with specialized subagent personas, formal state-machine execution, executable workflows, interactive architecture visualization, resilient error recovery, and ironclad verification gates.
 
 ---
 
@@ -45,13 +45,13 @@ Every user prompt transitions through this deterministic 6-phase state machine:
 ┌────────────────────────────────────────────────────────┐
 │ STATE 0: INTAKE & INTENT ROUTING                       │
 │ • Parse request & detect domain / slash-command        │
-│ • Bind active subagent personas & reference manuals     │
+│ • Bind active subagent personas & reference manuals    │
 └────────────────────────────────────────────────────────┘
       │
       ▼
 ┌────────────────────────────────────────────────────────┐
 │ STATE 1: RECONNAISSANCE & EVIDENCE GATHERING           │
-│ • Audit existing codebase, dependencies, & type specs   │
+│ • Audit existing codebase, dependencies, & type specs  │
 │ • Formulate Design Read (Frontend) or Trace Log (ADK)  │
 └────────────────────────────────────────────────────────┘
       │
@@ -60,7 +60,8 @@ Every user prompt transitions through this deterministic 6-phase state machine:
 │ STATE 2: MANDATORY PLAN & PROGRESS CHECKLIST (IRON LAW)│
 │ • WHEN ANY NEW PLAN OR TASK STARTS, YOU MUST:          │
 │   1. Author a structured Implementation Plan           │
-│   2. Generate an interactive Markdown Checklist (- [ ])│
+│   2. Validate plan schema via scripts/plan_validator.py│
+│   3. Generate an interactive Markdown Checklist (- [ ])│
 │ • NO CODE EDITING OR CREATION BEFORE PLAN & CHECKLIST! │
 │ • Update checklist items (- [x]) live as tests pass    │
 └────────────────────────────────────────────────────────┘
@@ -71,6 +72,7 @@ Every user prompt transitions through this deterministic 6-phase state machine:
 │ • Dispatch @architect, @visualizer, @engineer, etc.    │
 │ • Apply Ponytail Ladder (shortest working diff)        │
 │ • Enforce strict TDD (Red-Green-Refactor)              │
+│ • Parallel dispatch with file partition ownership      │
 └────────────────────────────────────────────────────────┘
       │
       ▼
@@ -78,14 +80,18 @@ Every user prompt transitions through this deterministic 6-phase state machine:
 │ STATE 4: AUTONOMOUS REVIEW & SELF-CORRECTION           │
 │ • CodeRabbit triage (Critical -> Info) & secret scan   │
 │ • Detect AI slop (detect_ai_slop.py) & contrast audit  │
+│ • WCAG AA/AAA check via scripts/contrast_checker.py    │
 │ • Archify layout checks (crossovers & geometry)        │
+│ • Circuit breaker & recovery via Workflow 13           │
 └────────────────────────────────────────────────────────┘
       │
       ▼
 ┌────────────────────────────────────────────────────────┐
 │ STATE 5: GATE-FUNCTION VERIFICATION (MANDATORY)        │
 │ • Execute fresh verification command via terminal      │
-│ • Assert exit code 0 & zero test failures               │
+│ • Run python scripts/verify_evidence.py --json --save  │
+│ • Assert exit code 0 & zero test failures              │
+│ • Archive certificate to .verification/ directory      │
 │ • Output structured completion receipt with proof      │
 └────────────────────────────────────────────────────────┘
 ```
@@ -98,16 +104,16 @@ Activate or role-play these specialized subagents depending on the active state:
 
 | Subagent Role | Domain / Skill Focus | Primary Responsibility | Persona Spec |
 | :--- | :--- | :--- | :--- |
-| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk mitigation & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
-| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, state channels. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
-| **`@visualizer`** | Archify | Interactive architecture, workflow, sequence, dataflow & lifecycle diagrams (SVG/HTML). | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
+| **`@planner`** | Implementation Planning | Zero-context plans, spec synthesis, risk matrix & interactive progress checklists (`- [ ]`). | [planner.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/planner.md) |
+| **`@architect`** | Google ADK 2.0 | Graph workflows, multi-agent topologies, dynamic nodes, HITL interrupts, resilience & circuit breakers. | [architect.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/architect.md) |
+| **`@visualizer`** | Archify & Visual QA | Interactive architecture diagrams (SVG/HTML), visual regression QA & design-to-code synthesis. | [visualizer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/visualizer.md) |
 | **`@engineer`** | Ponytail | Lazy senior developer mode, YAGNI, standard library first, shortest working diff wins. | [engineer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/engineer.md) |
-| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, 3 dials, layout rules, typography locks, color consistency. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
-| **`@animator`** | GSAP + Motion Design | 60fps GPU animations, 3 motion layers, timelines, ScrollTrigger, `prefers-reduced-motion`. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
-| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, boundary logs, 3-fix circuit breaker. | [debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md) |
-| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; no production code without failing tests. | [tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md) |
-| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, severity classification (Critical → Info). | [reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md) |
-| **`@verifier`** | Gate Verification | 5-step gate function, command execution verification, exit code 0 assertion. | [verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md) |
+| **`@designer`** | Taste + Design DNA | Anti-slop frontend aesthetics, responsive ladder, 4px grid, dark mode & contrast locks. | [designer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/designer.md) |
+| **`@animator`** | GSAP + Motion Design | 60fps GPU frame budgets, animation inventory, 3 motion layers, ScrollTrigger cleanup. | [animator.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/animator.md) |
+| **`@debugger`** | Systematic Debugging | 4-phase root-cause investigation, distributed tracing, memory leak forensics & circuit breakers. | [debugger.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/debugger.md) |
+| **`@tester`** | Test-Driven Development | Red-Green-Refactor enforcement; coverage targets (80% line, 70% branch) & quarantine protocols. | [tester.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/tester.md) |
+| **`@reviewer`** | CodeRabbit Review | Autonomous security scan, secret hygiene, dependency audits & license compliance. | [reviewer.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/reviewer.md) |
+| **`@verifier`** | Gate Verification | Parallel verification matrices, receipt archival (`.verification/`), exit code 0 gate. | [verifier.md](file:///d:/Agent%20SKILLS/ultra-skill/agents/verifier.md) |
 
 ---
 
@@ -116,7 +122,7 @@ Activate or role-play these specialized subagents depending on the active state:
 Execute step-by-step procedures documented in the `workflows/` directory:
 
 1. [01-agent-graph-orchestration.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/01-agent-graph-orchestration.md) — ADK 2.0 multi-agent pipelines & graph workflows
-2. [02-subagent-driven-development.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition & parallel implementer/reviewer dispatch
+2. [02-subagent-driven-development.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/02-subagent-driven-development.md) — Task decomposition, parallel dispatch & conflict resolution
 3. [03-anti-slop-frontend-design.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/03-anti-slop-frontend-design.md) — Taste-driven, anti-slop landing pages & UI components
 4. [04-cinematic-motion-choreography.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/04-cinematic-motion-choreography.md) — GSAP timelines, ScrollTrigger & 3-layer motion design
 5. [05-systematic-root-cause-debugging.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/05-systematic-root-cause-debugging.md) — 4-phase debugging & 3-fix circuit breaker
@@ -127,6 +133,8 @@ Execute step-by-step procedures documented in the `workflows/` directory:
 10. [10-gate-function-verification.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/10-gate-function-verification.md) — 5-step gate function before announcing task success
 11. [11-interactive-architecture-visualization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/11-interactive-architecture-visualization.md) — Archify interactive HTML system, workflow & sequence diagrams
 12. [12-implementation-planning-and-checklists.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/12-implementation-planning-and-checklists.md) — Mandatory plan authoring & real-time progress checklist tracking
+13. [13-error-recovery-and-graceful-degradation.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/13-error-recovery-and-graceful-degradation.md) — Transient retry, circuit breaker & atomic workspace rollback
+14. [14-performance-profiling-and-optimization.md](file:///d:/Agent%20SKILLS/ultra-skill/workflows/14-performance-profiling-and-optimization.md) — Core Web Vitals, bundle analyzer & 60fps frame budgets
 
 ---
 
@@ -160,6 +168,8 @@ Deep technical documentation, prompt templates, and code catalogs are bundled in
 | `/dna` | `@designer` | Workflow 08 + §5 Design DNA |
 | `/brand` | `@designer` | Workflow 09 + §9 UI/UX Pro Max |
 | `/verify` | `@verifier` | Workflow 10 + §8 Verification + `scripts/verify_evidence.py` |
+| `/recover` | `@architect`, `@debugger` | Workflow 13 (Error Recovery & Rollback) + §6 Debugging |
+| `/perf` | `@animator`, `@engineer` | Workflow 14 (Performance Profiling) + §12 Performance Guardrails |
 
 
 
@@ -1141,5 +1151,24 @@ Run this before delivering ANY output:
 
 ---
 
-*Ultra Skill v3.1 — Combining Google ADK 2.0, Archify, Ponytail, Taste, GSAP, Motion Design, Design DNA, Superpowers, CodeRabbit, Vercel Skills, and UI/UX Pro Max into one unstoppable AI powerhouse.*
+## 📜 CHANGELOG
+
+### v4.0.0
+- **Resilience & Error Recovery:** Added Workflow 13 (Error Recovery & Graceful Degradation) with exponential backoff, circuit breakers, and atomic workspace rollback.
+- **Performance Profiling:** Added Workflow 14 (Performance Profiling & Optimization) with Core Web Vitals, bundle analyzer budgets, and 60fps frame rate targets.
+- **Subagent Personas Deepened:** Upgraded all 10 subagent specs (`agents/*.md`) with explicit failure escalation protocols, anti-patterns, context requirements, collaboration interfaces, and output format contracts.
+- **Automated Tooling Suite:**
+  - `scripts/detect_ai_slop.py`: Fixed exit code bug, added `--json`, `--fix`, `--min-severity`, `.slopignore`, and expanded detection to 9 slop patterns.
+  - `scripts/verify_evidence.py`: Added machine-parseable `--json` output, `--save` receipt certificates, and configurable `--timeout`.
+  - `scripts/contrast_checker.py`: Added automated WCAG AA/AAA relative luminance and contrast ratio calculations with file scanning.
+  - `scripts/plan_validator.py`: Added §11 plan schema validation, checklist verification, and 20-task decomposition warning.
+  - `scripts/adk_trace_inspector.py`: Added latency timing analysis (>5s warning), token estimation, `--filter-tool`, and JSON mode.
+- **Parallel Dispatch Conflict Resolution:** Enhanced Workflow 02 with file partition ownership, Git worktree isolation, and 3-way merge synchronization.
+- **Workflow Interconnectivity:** Added `## Prerequisites` and `## Related Workflows` across all 14 workflow documents.
+- **Ecosystem Files:** Added `CHANGELOG.md`, `LICENSE` (MIT), platform-specific guidance in `CLAUDE.md` and `GEMINI.md`, and complete unit test suite in `tests/`.
+
+---
+
+*Ultra Skill v4.0 — Combining Google ADK 2.0, Archify, Ponytail, Taste, GSAP, Motion Design, Design DNA, Superpowers, CodeRabbit, Vercel Skills, and UI/UX Pro Max into one unstoppable AI powerhouse.*
+
 
